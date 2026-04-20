@@ -38,16 +38,15 @@ struct LoginView: View {
                     .cornerRadius(10)
             }
             
-            Button(action: {
+            Button {
                 vm.login(email: email, password: password)
-            }) {
+            } label: {
                 Text("Login")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(isLoginDisabled ? Color.gray : Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
             }
+            .buttonStyle(AppButtonStyle(
+                variant: .primary,
+                isDisabled: isLoginDisabled
+            ))
             .disabled(isLoginDisabled)
             
             Button(action: {
