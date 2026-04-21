@@ -37,6 +37,13 @@
 
 /* Begin PBXFileReference section */
 		38ADE0902F942F8F00709C14 /* Cleo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B9C0CA2F95C73600C7597B /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		38B9C0CB2F95C73600C7597B /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		38B9C0CC2F95C73600C7597B /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		38B9C0CD2F95C73600C7597B /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		38B9C0CE2F95C73600C7597B /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		38B9C0CF2F95C73600C7597B /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		38B9C0D02F95C73600C7597B /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -100,6 +107,7 @@
 		38ADE0872F942F8F00709C14 = {
 			isa = PBXGroup;
 			children = (
+				38B9C0C92F95C64900C7597B /* Fonts */,
 				38ADE0922F942F8F00709C14 /* Cleo */,
 				38D5F3B92F945C9200DE0B7C /* Frameworks */,
 				38ADE0912F942F8F00709C14 /* Products */,
@@ -112,6 +120,20 @@
 				38ADE0902F942F8F00709C14 /* Cleo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		38B9C0C92F95C64900C7597B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				38B9C0CA2F95C73600C7597B /* Manrope-Bold.ttf */,
+				38B9C0CB2F95C73600C7597B /* Manrope-ExtraBold.ttf */,
+				38B9C0CC2F95C73600C7597B /* Manrope-ExtraLight.ttf */,
+				38B9C0CD2F95C73600C7597B /* Manrope-Light.ttf */,
+				38B9C0CE2F95C73600C7597B /* Manrope-Medium.ttf */,
+				38B9C0CF2F95C73600C7597B /* Manrope-Regular.ttf */,
+				38B9C0D02F95C73600C7597B /* Manrope-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		38D5F3B92F945C9200DE0B7C /* Frameworks */ = {
