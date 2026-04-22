@@ -84,9 +84,13 @@ struct LoginView: View {
                             
                             Spacer()
                             
-                            Text("FORGOT?")
-                                .font(.custom("Manrope-Regular", size: 10))
-                                .foregroundColor(.gray)
+                            Button {
+                                vm.resetPassword()
+                            } label: {
+                                Text("FORGOT?")
+                                    .font(.custom("Manrope-Regular", size: 10))
+                                    .foregroundColor(.gray)
+                            }
                         }
                         
                         SecureField("••••••••", text: $vm.password)
@@ -193,5 +197,9 @@ struct LoginView: View {
             .background(Color("AppBackground"))
         }
     }
+}
+
+#Preview {
+    LoginView().environmentObject(AppViewModel())
 }
 

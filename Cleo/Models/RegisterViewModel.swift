@@ -2,7 +2,6 @@ import Foundation
 import FirebaseAuth
 import Combine
 
-
 class RegisterViewModel: ObservableObject {
     
     @Published var email = ""
@@ -10,13 +9,15 @@ class RegisterViewModel: ObservableObject {
     @Published var confirmPassword = ""
     
     @Published var errorMessage: String?
+    @Published var isLoading = false
     @Published var isEmailSent = false
     
     func register() {
         errorMessage = nil
         
-        // Validation
-        guard !email.isEmpty, !password.isEmpty else {
+        guard !email.isEmpty,
+              !password.isEmpty,
+              !confirmPassword.isEmpty else {
             errorMessage = "Please fill all fields"
             return
         }
@@ -26,23 +27,28 @@ class RegisterViewModel: ObservableObject {
             return
         }
         
-        // Firebase create user
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+        isLoading = true
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             
             if let error = error {
-                self.errorMessage = error.localizedDescription
+                DispatchQueue.main.async {
+                    self?.isLoading = false
+                    self?.errorMessage = error.localizedDescription
+                }
                 return
             }
             
-            // Send verification email
             result?.user.sendEmailVerification { error in
-                if let error = error {
-                    self.errorMessage = error.localizedDescription
-                    return
-                }
-                
                 DispatchQueue.main.async {
-                    self.isEmailSent = true
+                    self?.isLoading = false
+                    
+                    if let error = error {
+                        self?.errorMessage = error.localizedDescription
+                    } else {
+                        self?.isEmailSent = true
+                        try? Auth.auth().signOut()
+                    }
                 }
             }
         }

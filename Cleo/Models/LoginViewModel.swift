@@ -28,10 +28,43 @@ class LoginViewModel: ObservableObject {
         
         isLoading = true
         
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
-            DispatchQueue.main.async {
-                self?.isLoading = false
-                self?.errorMessage = error?.localizedDescription
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+            
+            guard let self = self else { return }
+            
+            if let error = error {
+                DispatchQueue.main.async {
+                    self.isLoading = false
+                    self.errorMessage = error.localizedDescription
+                }
+                return
+            }
+            
+            guard let user = result?.user else { return }
+            
+            // 🔴 IMPORTANT: check verification
+            user.reload { [weak self] error in
+                guard let self = self else { return }
+                
+                DispatchQueue.main.async {
+                    self.isLoading = false
+                    
+                    if let error = error {
+                        self.errorMessage = error.localizedDescription
+                        return
+                    }
+                    
+                    // 🔴 IMPORTANT: get UPDATED user
+                    guard let refreshedUser = Auth.auth().currentUser else { return }
+                    
+                    if !refreshedUser.isEmailVerified {
+                        self.errorMessage = "Please verify your email first"
+                        try? Auth.auth().signOut()
+                        return
+                    }
+                    
+                    // ✅ NOW it will work correctly
+                }
             }
         }
     }
@@ -192,5 +225,27 @@ class LoginViewModel: ObservableObject {
         let inputData = Data(input.utf8)
         let hashedData = SHA256.hash(data: inputData)
         return hashedData.map { String(format: "%02x", $0) }.joined()
+    }
+    
+    func resetPassword() {
+        
+        guard !email.isEmpty else {
+            errorMessage = "Enter your email first"
+            return
+        }
+        
+        isLoading = true
+        
+        Auth.auth().sendPasswordReset(withEmail: email) { [weak self] error in
+            DispatchQueue.main.async {
+                self?.isLoading = false
+                
+                if let error = error {
+                    self?.errorMessage = error.localizedDescription
+                } else {
+                    self?.errorMessage = "Password reset email sent"
+                }
+            }
+        }
     }
 }

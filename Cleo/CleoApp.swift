@@ -5,6 +5,7 @@ import FirebaseCore
 struct YourAppName: App {
     
     @StateObject private var appVM = AppViewModel()
+    @StateObject private var session = SessionManager() // 👈 ADD THIS
 
     init() {
         FirebaseApp.configure()
@@ -14,6 +15,7 @@ struct YourAppName: App {
         WindowGroup {
             SplashView()
                 .environmentObject(appVM)
+                .environmentObject(session) // 👈 ADD THIS
         }
     }
 }
