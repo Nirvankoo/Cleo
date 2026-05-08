@@ -1,0 +1,74 @@
+[
+  {
+    "outfit_id": "chic_work_001",
+    "style": "chic",
+    "occasion": "work",
+    "season": "fall",
+    "budget": "300-600",
+    "skin_tone": "medium",
+    "items": [
+      { "type": "blazer", "color": "beige", "fit": "tailored" },
+      { "type": "blouse", "color": "white", "material": "satin" },
+      { "type": "pants", "color": "black", "fit": "tailored" },
+      { "type": "loafers", "color": "black" },
+      { "type": "tote_bag", "color": "beige" }
+    ]
+  },
+  {
+    "outfit_id": "casual_everyday_001",
+    "style": "casual",
+    "occasion": "everyday",
+    "season": "spring",
+    "budget": "50-150",
+    "skin_tone": "fair",
+    "items": [
+      { "type": "tshirt", "color": "white" },
+      { "type": "jeans", "color": "blue", "fit": "straight" },
+      { "type": "sneakers", "color": "white" },
+      { "type": "crossbody_bag", "color": "brown" }
+    ]
+  },
+  {
+    "outfit_id": "party_night_001",
+    "style": "chic",
+    "occasion": "party",
+    "season": "summer",
+    "budget": "100-300",
+    "skin_tone": "tan",
+    "items": [
+      { "type": "dress", "color": "black", "style": "bodycon" },
+      { "type": "heels", "color": "black" },
+      { "type": "shoulder_bag", "color": "black" },
+      { "type": "earrings", "color": "gold" }
+    ]
+  },
+  {
+    "outfit_id": "travel_001",
+    "style": "casual",
+    "occasion": "travel",
+    "season": "spring",
+    "budget": "100-300",
+    "skin_tone": "medium",
+    "items": [
+      { "type": "hoodie", "color": "grey", "style": "oversized" },
+      { "type": "leggings", "color": "black" },
+      { "type": "sneakers", "color": "white" },
+      { "type": "backpack", "color": "black" }
+    ]
+  },
+  {
+    "outfit_id": "sport_001",
+    "style": "sport",
+    "occasion": "everyday",
+    "season": "summer",
+    "budget": "100-300",
+    "skin_tone": "deep",
+    "items": [
+      { "type": "tank_top", "color": "black" },
+      { "type": "shorts", "color": "black" },
+      { "type": "sneakers", "color": "white" },
+      { "type": "gym_bag", "color": "black" }
+    ]
+  }
+]
+

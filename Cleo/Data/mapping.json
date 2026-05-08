@@ -1,0 +1,37 @@
+{
+  "style": {
+    "chic": ["elegant", "minimal", "classy", "tailored", "clean"],
+    "casual": ["relaxed", "comfortable", "basic"],
+    "streetwear": ["oversized", "urban", "trendy", "layered"],
+    "sport": ["athletic", "activewear", "performance", "athleisure"]
+  },
+
+  "occasion": {
+    "work": ["office", "professional", "tailored", "structured"],
+    "party": ["evening", "statement", "bold", "trendy"],
+    "date": ["romantic", "elegant", "soft", "feminine"],
+    "travel": ["comfortable", "relaxed", "practical", "layered"],
+    "everyday": ["casual", "comfortable", "basic"]
+  },
+
+  "budget": {
+    "50-150": ["budget", "affordable", "basic"],
+    "100-300": ["affordable", "modern", "trendy"],
+    "300-600": ["premium", "tailored", "quality"],
+    "600-1000": ["luxury", "designer", "high_quality"]
+  },
+
+  "season": {
+    "spring": ["light", "fresh", "breathable", "soft_colors", "cotton", "linen"],
+    "summer": ["airy", "lightweight", "cool", "bright_colors", "breathable", "linen"],
+    "fall": ["layered", "warm", "earth_tones", "structured", "knitwear", "leather"],
+    "winter": ["warm", "heavy_layers", "wool", "thick", "cozy", "dark_tones", "outerwear"]
+  },
+
+  "skin_tone": {
+    "fair": ["soft_neutrals", "pastels", "light_beige", "cool_tones", "rose", "silver_jewelry"],
+    "medium": ["warm_neutrals", "earth_tones", "olive", "terracotta", "beige", "gold_jewelry"],
+    "tan": ["warm_deep", "caramel", "olive_green", "rust", "deep_beige", "gold_jewelry"],
+    "deep": ["rich_colors", "jewel_tones", "emerald", "royal_blue", "high_contrast", "gold_jewelry"]
+  }
+}

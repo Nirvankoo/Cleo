@@ -10,14 +10,17 @@ struct MoodIcon: View {
         VStack(spacing: 6) {
             
             Image(systemName: system)
-                .font(.system(size: 18))
-                .frame(width: 40, height: 40)
-                .background(selected ? Color.gray.opacity(0.2) : Color.gray.opacity(0.1))
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .font(.system(size: 18, weight: .medium))
+                .foregroundColor(selected ? .white : Color("TextPrimary"))
+                .frame(width: 44, height: 44)
+                .background(
+                    selected ? Color("CleoPrimary") : Color.clear
+                )
+                .clipShape(Circle())
             
             Text(label)
                 .font(.custom("Manrope-Regular", size: 10))
-                .foregroundColor(.gray)
+                .foregroundColor(selected ? Color("CleoPrimary") : Color("TextPrimary"))
         }
     }
 }

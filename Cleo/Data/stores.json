@@ -1,0 +1,113 @@
+[
+  {
+    "name": "H&M",
+    "price_level": 1,
+    "budget_range": "50-150",
+    "style_tags": ["casual", "basic", "everyday", "minimal"],
+    "season_strength": ["spring", "summer", "fall", "winter"],
+    "color_fit": ["fair", "medium", "tan", "deep"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["tshirt", "jeans", "hoodie", "shorts", "sneakers", "crossbody_bag"],
+    "search_template": "https://www2.hm.com/en_ca/search-results.html?q={query}"
+  },
+  {
+    "name": "Uniqlo",
+    "price_level": 2,
+    "budget_range": "80-200",
+    "style_tags": ["minimal", "casual", "clean", "functional"],
+    "season_strength": ["spring", "fall", "winter"],
+    "color_fit": ["fair", "medium", "tan", "deep"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["tshirt", "tank_top", "hoodie", "pants", "leggings"],
+    "search_template": "https://www.uniqlo.com/ca/en/search?q={query}"
+  },
+  {
+    "name": "ZARA",
+    "price_level": 3,
+    "budget_range": "120-400",
+    "style_tags": ["chic", "modern", "streetwear", "office", "minimal"],
+    "season_strength": ["spring", "summer", "fall", "winter"],
+    "color_fit": ["fair", "medium", "tan", "deep"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["blazer", "blouse", "dress", "heels", "loafers", "tote_bag", "shoulder_bag"],
+    "search_template": "https://www.zara.com/ca/en/search?searchTerm={query}"
+  },
+  {
+    "name": "Aritzia",
+    "price_level": 3,
+    "budget_range": "150-500",
+    "style_tags": ["chic", "minimal", "elegant", "quiet_luxury", "workwear"],
+    "season_strength": ["fall", "winter", "spring"],
+    "color_fit": ["fair", "medium"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["blazer", "blouse", "dress", "leggings", "tote_bag"],
+    "search_template": "https://www.aritzia.com/en/search?q={query}"
+  },
+  {
+    "name": "COS",
+    "price_level": 3,
+    "budget_range": "150-500",
+    "style_tags": ["minimal", "architectural", "modern", "quiet_luxury"],
+    "season_strength": ["fall", "winter", "spring"],
+    "color_fit": ["fair", "medium", "tan"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["blazer", "dress", "pants", "blouse"],
+    "search_template": "https://www.cos.com/en/search?q={query}"
+  },
+  {
+    "name": "Banana Republic",
+    "price_level": 3,
+    "budget_range": "120-400",
+    "style_tags": ["chic", "workwear", "classic", "elegant"],
+    "season_strength": ["fall", "winter", "spring"],
+    "color_fit": ["fair", "medium", "tan"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["blazer", "pants", "blouse", "loafers"],
+    "search_template": "https://bananarepublic.gapcanada.ca/search?q={query}"
+  },
+  {
+    "name": "ASOS",
+    "price_level": 2,
+    "budget_range": "80-250",
+    "style_tags": ["trendy", "streetwear", "party", "casual"],
+    "season_strength": ["spring", "summer", "fall"],
+    "color_fit": ["fair", "medium", "tan", "deep"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["dress", "heels", "earrings", "shoulder_bag"],
+    "search_template": "https://www.asos.com/search/?q={query}"
+  },
+  {
+    "name": "Nike",
+    "price_level": 2,
+    "budget_range": "80-250",
+    "style_tags": ["sport", "athleisure", "streetwear", "casual"],
+    "season_strength": ["spring", "summer", "fall", "winter"],
+    "color_fit": ["fair", "medium", "tan", "deep"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["sneakers", "shorts", "tank_top", "hoodie"],
+    "search_template": "https://www.nike.com/ca/w?q={query}"
+  },
+  {
+    "name": "Adidas",
+    "price_level": 2,
+    "budget_range": "80-250",
+    "style_tags": ["sport", "athleisure", "streetwear"],
+    "season_strength": ["spring", "summer", "fall", "winter"],
+    "color_fit": ["fair", "medium", "tan", "deep"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["sneakers", "shorts", "hoodie"],
+    "search_template": "https://www.adidas.ca/en/search?q={query}"
+  },
+  {
+    "name": "Lululemon",
+    "price_level": 3,
+    "budget_range": "100-400",
+    "style_tags": ["sport", "athleisure", "minimal", "casual"],
+    "season_strength": ["spring", "summer", "fall", "winter"],
+    "color_fit": ["fair", "medium", "tan"],
+    "product_categories": ["clothing", "bags", "shoes", "accessories"],
+    "item_types": ["leggings", "hoodie", "tank_top", "gym_bag"],
+    "search_template": "https://shop.lululemon.com/search?Ntt={query}"
+  }
+]
+

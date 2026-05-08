@@ -2,180 +2,237 @@ import SwiftUI
 
 struct HomeView: View {
     
+    // MARK: - Environment
     @EnvironmentObject var appVM: AppViewModel
-    @State private var budget: Double = 150
+    @EnvironmentObject var authManager: AuthManager
     
+    // MARK: - State
+    @State private var budget: Double = 150
+    @State private var selectedPersona: String = "Chic"
+    @State private var selectedOccasion: String = "Date"
+    @State private var selectedSeason: String = "SPRING"
+    @State private var selectedSkinTone: String = "#C89A75"
+    
+    @State private var navigate = false
+    @State private var generatedPreferences: OutfitPreferences?
+    
+    @State private var showMenu = false
+    
+    // MARK: - UI
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 0) {
                 
-                // MARK: - Top Section
-                HStack {
-                    
-                    Image(systemName: "line.3.horizontal")
-                        .font(.system(size: 20, weight: .medium))
-                        .foregroundColor(Color("TextPrimary"))
-                    
-                    Spacer()
-                    
-                    Text("Cleo")
-                        .font(.custom("Manrope-SemiBold", size: 14))
-                        .tracking(4)
-                        .foregroundColor(Color("TextPrimary"))
-                    
-                    Spacer()
-                    
-                    Circle()
-                        .fill(Color("SurfaceLow"))
-                        .frame(width: 32, height: 32)
-                }
-                .padding(.horizontal, 20)
-                .padding(.top, 20)
-                .padding(.bottom, 10)
+                TopMenu()
                 
-                // MARK: - Content
                 VStack(spacing: 24) {
                     
-                    // Title
+                    // MARK: Header
                     VStack(alignment: .leading, spacing: 6) {
-                        Text("Find Your Outfit")
+                        Text("Find your perfect outfit")
                             .font(.custom("Manrope-SemiBold", size: 22))
                             .foregroundColor(Color("TextPrimary"))
                         
-                        Text("Define your aesthetic for the digital atelier.")
+                        Text("Tailored to your style and budget")
                             .font(.custom("Manrope-Regular", size: 14))
                             .foregroundColor(Color("TextPrimary"))
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
-                    // STYLE PERSONA
-                    Text("STYLE PERSONA")
-                        .font(.custom("Manrope-Medium", size: 10))
-                        .tracking(1.5)
-                        .foregroundColor(Color("TextPrimary"))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    VStack(spacing: 12) {
-                        HStack(spacing: 12) {
-                            PersonaButton(title: "Casual", isSelected: false)
-                            PersonaButton(title: "Chic", isSelected: true)
-                        }
-                        HStack(spacing: 12) {
-                            PersonaButton(title: "Sport", isSelected: false)
-                            PersonaButton(title: "Streetwear", isSelected: false)
+                    // MARK: Persona
+                    VStack(alignment: .leading, spacing: 12) {
+                        
+                        sectionTitle("STYLE")
+                            .font(.custom("Manrope-Medium", size: 12))
+                            .foregroundColor(Color("TextPrimary"))
+                        
+                        VStack(spacing: 12) {
+                            
+                            HStack(spacing: 12) {
+                                styleButton("Casual")
+                                styleButton("Chic")
+                            }
+                            
+                            HStack(spacing: 12) {
+                                styleButton("Sport")
+                                styleButton("Streetwear")
+                            }
                         }
                     }
                     
-                    // MARK: - Budget Card
+                    // MARK: Budget
                     VStack(spacing: 16) {
+                        
                         HStack {
-                            Text("INVESTMENT")
-                                .font(.custom("Manrope-Medium", size: 10))
-                                .tracking(1.5)
-                                .foregroundColor(Color("TextPrimary"))
-                            
+                            sectionTitle("BUDGET")
                             Spacer()
-                            
                             Text("$\(Int(budget))")
-                                .font(.custom("Manrope-SemiBold", size: 18))
-                                .foregroundColor(Color("TextPrimary"))
                         }
                         
                         Slider(value: $budget, in: 50...300)
-                            .tint(Color("TextPrimary"))
                         
                         HStack {
                             Text("$50")
-                                .font(.custom("Manrope-Regular", size: 12))
-                                .foregroundColor(Color("TextPrimary"))
-                            
                             Spacer()
-                            
                             Text("$300")
-                                .font(.custom("Manrope-Regular", size: 12))
-                                .foregroundColor(Color("TextPrimary"))
                         }
                     }
                     .padding(16)
                     .background(Color("SurfaceLow"))
                     .cornerRadius(16)
                     
-                    // MARK: - Complexion
+                    // MARK: Skin Tone
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("COMPLEXION PALETTE")
-                            .font(.custom("Manrope-Medium", size: 10))
-                            .tracking(1.5)
-                            .foregroundColor(Color("TextPrimary"))
+                        sectionTitle("SKIN TONE")
                         
                         HStack(spacing: 12) {
-                            ColorCircle(color: "#E6CFC0", isSelected: false)
-                            ColorCircle(color: "#D9B89F", isSelected: false)
-                            ColorCircle(color: "#C89A75", isSelected: true)
-                            ColorCircle(color: "#A96F4B", isSelected: false)
-                            ColorCircle(color: "#7A4A2C", isSelected: false)
-                            ColorCircle(color: "#4A2A18", isSelected: false)
+                            skinToneButton(color: "#E6CFC0", type: "fair")
+                            skinToneButton(color: "#C89A75", type: "medium")
+                            skinToneButton(color: "#A96F4B", type: "tan")
+                            skinToneButton(color: "#4A2A18", type: "deep")
                         }
                     }
                     
-                    // MARK: - Occasion
+                    // MARK: Occasion
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("THE OCCASION")
-                            .font(.custom("Manrope-Medium", size: 10))
-                            .tracking(1.5)
-                            .foregroundColor(Color("TextPrimary"))
+                        sectionTitle("THE OCCASION")
                         
                         VStack(spacing: 10) {
-                            HStack(spacing: 10) {
-                                CapsuleButton(title: "Work", selected: false)
-                                CapsuleButton(title: "Date", selected: true)
-                                CapsuleButton(title: "Party", selected: false)
+                            
+                            HStack {
+                                occasionButton("Work")
+                                occasionButton("Date")
+                                occasionButton("Party")
                             }
                             
-                            HStack(spacing: 10) {
-                                CapsuleButton(title: "Travel", selected: false)
-                                CapsuleButton(title: "Everyday", selected: false)
+                            HStack {
+                                occasionButton("Travel")
+                                occasionButton("Everyday")
                             }
                         }
                     }
                     
-                    // MARK: - Seasonal
+                    // MARK: Season
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("SEASONAL MOOD")
-                            .font(.custom("Manrope-Medium", size: 10))
-                            .tracking(1.5)
-                            .foregroundColor(Color("TextPrimary"))
+                        sectionTitle("SEASON")
                         
-                        HStack(spacing: 16) {
-                            MoodIcon(system: "snowflake", label: "WINTER", selected: false)
-                            MoodIcon(system: "leaf", label: "SPRING", selected: true)
-                            MoodIcon(system: "sun.max", label: "SUMMER", selected: false)
-                            MoodIcon(system: "leaf.fill", label: "FALL", selected: false)
+                        HStack {
+                            seasonButton("WINTER", icon: "snowflake")
+                            seasonButton("SPRING", icon: "leaf")
+                            seasonButton("SUMMER", icon: "sun.max")
+                            seasonButton("FALL", icon: "leaf.fill")
                         }
                     }
                     
-                    // MARK: - Button
+                    // MARK: Generate Button
                     Button {
-                        print("Generate outfit tapped")
+                        generateOutfit()
                     } label: {
                         Text("GENERATE OUTFIT")
-                            .font(.custom("Manrope-Medium", size: 16))
+                            .font(.custom("Manrope-SemiBold", size: 14))
+                            .padding(.vertical, 12)
                             .frame(maxWidth: .infinity)
-                            .padding()
                     }
-                    .background(Color("Primary"))
+                    .background(Color("CleoPrimary"))
                     .foregroundColor(.white)
                     .clipShape(Capsule())
-                    .padding(.top, 10)
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 20)
                 }
-                .padding(.horizontal, 24)
-                .padding(.top, 20)
+                               .padding(.horizontal, 24)
+                               .padding(.top, 20)
+                           }
+                       }
+                       .background(Color("AppBackground"))
+                       .sheet(isPresented: $showMenu) {
+                           menuSheet
+                       }
+                       .navigationDestination(isPresented: $navigate) {
+                           if let preferences = generatedPreferences {
+                               OutfitView(preferences: preferences)
+                           }
+                       }
+                   }
+               }
+}
+
+// MARK: - Components
+extension HomeView {
+    
+    private func styleButton(_ title: String) -> some View {
+        StyleButton(title: title, isSelected: selectedPersona == title)
+            .onTapGesture { selectedPersona = title }
+    }
+    private func sectionTitle(_ text: String) -> some View {
+        Text(text)
+            .font(.custom("Manrope-Medium", size: 12))
+            .foregroundColor(Color("TextPrimary"))
+    }
+    private func occasionButton(_ title: String) -> some View {
+        CapsuleButton(title: title, selected: selectedOccasion == title)
+            .onTapGesture { selectedOccasion = title }
+    }
+    
+    private func seasonButton(_ label: String, icon: String) -> some View {
+        MoodIcon(system: icon, label: label, selected: selectedSeason == label)
+            .onTapGesture { selectedSeason = label }
+    }
+    
+    private func skinToneButton(color: String, type: String) -> some View {
+        ColorCircle(color: color, isSelected: selectedSkinTone == type)
+            .onTapGesture { selectedSkinTone = type }
+    }
+    
+    private func navigateToResult(preferences: OutfitPreferences) {
+        self.generatedPreferences = preferences
+        self.navigate = true
+    }
+}
+
+// MARK: - Logic
+extension HomeView {
+    
+    private func generateOutfit() {
+        let preferences = buildPreferences()
+        navigateToResult(preferences: preferences)
+    }
+    
+    private func buildPreferences() -> OutfitPreferences {
+        OutfitPreferences(
+            persona: selectedPersona,
+            occasion: selectedOccasion,
+            season: selectedSeason,
+            skinTone: selectedSkinTone,
+            budget: budget
+        )
+    }
+}
+
+// MARK: - Menu
+extension HomeView {
+    
+    private var menuSheet: some View {
+        VStack(spacing: 20) {
+            
+            Text("Menu")
+                .font(.title)
+            
+            Button {
+                authManager.signOut()
+                showMenu = false
+            } label: {
+                Text("Logout")
+                    .foregroundColor(.red)
             }
+            
+            Spacer()
         }
-        .background(Color("AppBackground"))
+        .padding()
     }
 }
 
 #Preview {
-    HomeView().environmentObject(AppViewModel())
+    HomeView()
+        .environmentObject(AppViewModel())
+        .environmentObject(AuthManager())
 }

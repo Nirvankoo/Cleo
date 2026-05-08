@@ -7,11 +7,22 @@ struct CapsuleButton: View {
     
     var body: some View {
         Text(title)
-            .font(.custom("Manrope-Regular", size: 14))
-            .padding(.horizontal, 16)
-            .padding(.vertical, 10)
-            .background(selected ? Color.gray.opacity(0.7) : Color.gray.opacity(0.1))
-            .foregroundColor(selected ? .white : .black)
+            .font(.custom("Manrope-Medium", size: 13))
+            .foregroundColor(selected ? .white : Color("TextPrimary"))
+            .padding(.horizontal, 14)
+            .padding(.vertical, 8)
+            .background(
+                selected
+                ? Color("CleoPrimary")
+                : Color("SurfaceLow")
+            )
             .clipShape(Capsule())
+            .overlay(
+                Capsule()
+                    .stroke(
+                        selected ? Color("CleoPrimary") : Color.gray.opacity(0.2),
+                        lineWidth: 1.5
+                    )
+            )
     }
 }

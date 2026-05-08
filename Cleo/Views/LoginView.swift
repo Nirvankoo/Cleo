@@ -3,203 +3,246 @@ import AuthenticationServices
 
 struct LoginView: View {
     
-    @StateObject private var vm = LoginViewModel()
+    @State private var email = ""
+    @State private var password = ""
     
-   
+    @EnvironmentObject var authManager: AuthManager
     
     private var isLoginDisabled: Bool {
-        vm.isLoading ||
-        vm.email.trimmingCharacters(in: .whitespaces).isEmpty ||
-        vm.password.trimmingCharacters(in: .whitespaces).isEmpty
+        authManager.isLoading ||
+        email.trimmingCharacters(in: .whitespaces).isEmpty ||
+        password.trimmingCharacters(in: .whitespaces).isEmpty
     }
     
     var body: some View {
+        
         NavigationStack {
-            VStack(spacing: 22) { // ⬅️ Step 3: reduced spacing from 28 → 22
+            
+            ZStack {
                 
-                // MARK: - Brand
-                Text("CLEO")
-                    .font(.custom("Manrope-SemiBold", size: 14))
-                    .tracking(4)
-                    .foregroundColor(Color("TextPrimary"))
+                // MARK: - Background
+                Color("AppBackground")
+                    .ignoresSafeArea()
                 
-                Image("login_model")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 260)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .overlay(
-                        LinearGradient(
-                            gradient: Gradient(colors: [Color.clear, Color("AppBackground")]),
-                            startPoint: .center,
-                            endPoint: .bottom
-                        )
-                    )
-                
-                // MARK: - Title
-                VStack(spacing: 6) {
-                    Text("Welcome to Cleo")
-                        .font(.custom("Manrope-Regular", size: 28))
+                VStack(spacing: 22) {
+                    
+                    Spacer()
+                        .frame(height: 25)
+                    
+                    // MARK: - Brand
+                    Text("CLEO")
+                        .font(.custom("Manrope-SemiBold", size: 14))
+                        .tracking(4)
                         .foregroundColor(Color("TextPrimary"))
                     
-                    Text("Curating your style journey.")
-                        .font(.custom("Manrope-Regular", size: 14))
-                        .foregroundColor(.gray)
-                }
-                
-                // MARK: - Inputs
-                VStack(spacing: 20) {
-                    
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text("EMAIL")
-                            .font(.custom("Manrope-Medium", size: 10))
-                            .tracking(1.5)
-                            .foregroundColor(.gray)
-                        
-                        TextField(
-                            "",
-                            text: $vm.email,
-                            prompt: Text("your@email.com")
-                                .foregroundStyle(Color("OutlineVariant").opacity(0.6))
-                        )
-                        .font(.custom("Manrope-Regular", size: 16))
-                        .keyboardType(.emailAddress)
-                        .autocapitalization(.none)
-                        .tint(Color("TextPrimary"))
-                        .padding(.vertical, 8)
+                    // MARK: - Hero Image
+                    Image("login_model")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(height: 260)
+                        .clipShape(RoundedRectangle(cornerRadius: 22))
                         .overlay(
-                            Rectangle()
-                                .frame(height: 1)
-                                .foregroundColor(Color("OutlineVariant").opacity(0.4)),
-                            alignment: .bottom
+                            LinearGradient(
+                                gradient: Gradient(colors: [
+                                    Color.clear,
+                                    Color("AppBackground")
+                                ]),
+                                startPoint: .center,
+                                endPoint: .bottom
+                            )
                         )
+                    
+                    // MARK: - Title
+                    VStack(spacing: 6) {
+                        
+                        Text("Welcome to Cleo")
+                            .font(.custom("Manrope-Regular", size: 28))
+                            .foregroundColor(Color("TextPrimary"))
+                        
+                        Text("Curating your style journey.")
+                            .font(.custom("Manrope-Regular", size: 14))
+                            .foregroundColor(.gray)
                     }
                     
-                    VStack(alignment: .leading, spacing: 6) {
-                        HStack {
-                            Text("PASSWORD")
+                    // MARK: - Inputs
+                    VStack(spacing: 20) {
+                        
+                        // EMAIL
+                        VStack(alignment: .leading, spacing: 6) {
+                            
+                            Text("EMAIL")
                                 .font(.custom("Manrope-Medium", size: 10))
                                 .tracking(1.5)
                                 .foregroundColor(.gray)
                             
-                            Spacer()
-                            
-                            Button {
-                                vm.resetPassword()
-                            } label: {
-                                Text("FORGOT?")
-                                    .font(.custom("Manrope-Regular", size: 10))
-                                    .foregroundColor(.gray)
-                            }
-                        }
-                        
-                        SecureField("••••••••", text: $vm.password)
+                            TextField(
+                                "",
+                                text: $email,
+                                prompt: Text("your@email.com")
+                                    .foregroundStyle(
+                                        Color("OutlineVariant").opacity(0.7)
+                                    )
+                            )
                             .font(.custom("Manrope-Regular", size: 16))
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
+                            .tint(Color("TextPrimary"))
                             .padding(.vertical, 8)
                             .overlay(
                                 Rectangle()
                                     .frame(height: 1)
-                                    .foregroundColor(Color("OutlineVariant").opacity(0.4)),
+                                    .foregroundColor(
+                                        Color("OutlineVariant").opacity(0.4)
+                                    ),
                                 alignment: .bottom
                             )
+                        }
+                        
+                        // PASSWORD
+                        VStack(alignment: .leading, spacing: 6) {
+                            
+                            HStack {
+                                
+                                Text("PASSWORD")
+                                    .font(.custom("Manrope-Medium", size: 10))
+                                    .tracking(1.5)
+                                    .foregroundColor(.gray)
+                                
+                                Spacer()
+                                
+                                Button {
+                                    authManager.resetPassword(email: email)
+                                } label: {
+                                    Text("FORGOT?")
+                                        .font(.custom("Manrope-Regular", size: 10))
+                                        .foregroundColor(.gray)
+                                }
+                            }
+                            
+                            SecureField("••••••••", text: $password)
+                                .font(.custom("Manrope-Regular", size: 16))
+                                .padding(.vertical, 8)
+                                .overlay(
+                                    Rectangle()
+                                        .frame(height: 1)
+                                        .foregroundColor(
+                                            Color("OutlineVariant").opacity(0.4)
+                                        ),
+                                    alignment: .bottom
+                                )
+                        }
                     }
-                }
-                
-                // MARK: - Login Button
-                Button {
-                    vm.login()
-                } label: {
-                    if vm.isLoading {
-                        ProgressView()
-                            .tint(.white)
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                    } else {
-                        Text("Log In")
-                            .font(.custom("Manrope-Medium", size: 16))
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                    }
-                }
-                .background(Color("Primary"))
-                .foregroundColor(.white)
-                .clipShape(Capsule())
-                .disabled(isLoginDisabled)
-                
-                // MARK: - Sign Up
-                HStack {
-                    Text("Don’t have an account?")
-                        .foregroundColor(.gray)
-                        .font(.custom("Manrope-Regular", size: 13))
                     
-                    NavigationLink {
-                        RegisterView()
-                    } label: {
-                        Text("Sign Up")
-                            .font(.custom("Manrope-Medium", size: 13))
-                            .foregroundColor(Color("Primary"))
-                    }
-                }
-                
-                // MARK: - Socials (Step 2 + 4 applied)
-                VStack(spacing: 12) { // ⬅️ Step 2: grouped tightly
-                    
+                    // MARK: - Login Button
                     Button {
-                        vm.signInWithGoogle()
+                        authManager.signIn(
+                            email: email,
+                            password: password
+                        )
                     } label: {
-                        HStack(spacing: 10) {
+                        
+                        if authManager.isLoading {
                             
-                            Image("google_icon")
-                                .resizable()
-                                .frame(width: 18, height: 18)
+                            ProgressView()
+                                .tint(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding()
                             
-                            Text("Continue with Google")
-                                .font(.custom("Manrope-Medium", size: 14))
+                        } else {
+                            
+                            Text("Log In")
+                                .font(.custom("Manrope-Medium", size: 16))
+                                .frame(maxWidth: .infinity)
+                                .padding()
                         }
-                        .frame(maxWidth: .infinity, alignment: .center) // 👈 key line
-                        .padding()
                     }
-                    .background(Color.white)
-                    .foregroundColor(Color("TextPrimary"))
+                    .background(Color("CleoPrimary"))
+                    .foregroundColor(.white)
                     .clipShape(Capsule())
-                    .overlay(
-                        Capsule()
-                            .stroke(Color("OutlineVariant").opacity(0.4), lineWidth: 1)
-                    )
-                    .disabled(vm.isLoading)
+                    .disabled(isLoginDisabled)
                     
-                    SignInWithAppleButton(
-                        onRequest: { request in
-                            vm.handleAppleSignIn(request: request)
-                        },
-                        onCompletion: { result in
-                            vm.handleAppleCompletion(result: result)
+                    // MARK: - Sign Up
+                    HStack {
+                        
+                        Text("Don’t have an account?")
+                            .foregroundColor(.gray)
+                            .font(.custom("Manrope-Regular", size: 13))
+                        
+                        NavigationLink {
+                            RegisterView()
+                        } label: {
+                            Text("Sign Up")
+                                .font(.custom("Manrope-Medium", size: 13))
+                                .foregroundColor(Color("CleoPrimary"))
                         }
-                    )
-                    .signInWithAppleButtonStyle(.black)
-                    .frame(height: 50)
-                    .clipShape(Capsule())
-                    .disabled(vm.isLoading)
+                    }
+                    
+                    // MARK: - Social Buttons
+                    VStack(spacing: 12) {
+                        
+                        // Google
+                        Button {
+                            authManager.signInWithGoogle()
+                        } label: {
+                            
+                            HStack(spacing: 10) {
+                                
+                                Image("google_icon")
+                                    .resizable()
+                                    .frame(width: 18, height: 18)
+                                
+                                Text("Continue with Google")
+                                    .font(.custom("Manrope-Medium", size: 14))
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                        }
+                        .background(Color.white)
+                        .foregroundColor(Color("TextPrimary"))
+                        .clipShape(Capsule())
+                        .overlay(
+                            Capsule()
+                                .stroke(
+                                    Color("OutlineVariant").opacity(0.4),
+                                    lineWidth: 1
+                                )
+                        )
+                        .disabled(authManager.isLoading)
+                        
+                        // Apple
+                        SignInWithAppleButton(
+                            onRequest: { request in
+                                authManager.handleAppleSignIn(request: request)
+                            },
+                            onCompletion: { result in
+                                authManager.handleAppleCompletion(result: result)
+                            }
+                        )
+                        .signInWithAppleButtonStyle(.black)
+                        .frame(height: 50)
+                        .clipShape(Capsule())
+                        .disabled(authManager.isLoading)
+                    }
+                    .padding(.top, 10)
+                    
+                    // MARK: - Error
+                    if let error = authManager.errorMessage {
+                        
+                        Text(error)
+                            .foregroundColor(.red)
+                            .font(.custom("Manrope-Regular", size: 13))
+                            .multilineTextAlignment(.center)
+                    }
+                    
+                    Spacer()
                 }
-                .padding(.top, 10) // ⬅️ Step 4: controlled spacing instead of Spacer
-                
-                // MARK: - Errors
-                if let error = vm.errorMessage {
-                    Text(error)
-                        .foregroundColor(.red)
-                        .font(.custom("Manrope-Regular", size: 13))
-                        .multilineTextAlignment(.center)
-                }
-                
-                Spacer() // ⬅️ keep ONLY this one
+                .padding(.horizontal, 24)
             }
-            .padding(.horizontal, 24)
-            .background(Color("AppBackground"))
         }
     }
 }
 
 #Preview {
-    LoginView().environmentObject(AppViewModel())
+    LoginView()
+        .environmentObject(AuthManager())
 }
-
