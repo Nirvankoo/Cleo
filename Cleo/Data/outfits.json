@@ -1,74 +1,1819 @@
 [
-  {
-    "outfit_id": "chic_work_001",
-    "style": "chic",
-    "occasion": "work",
-    "season": "fall",
-    "budget": "300-600",
-    "skin_tone": "medium",
-    "items": [
-      { "type": "blazer", "color": "beige", "fit": "tailored" },
-      { "type": "blouse", "color": "white", "material": "satin" },
-      { "type": "pants", "color": "black", "fit": "tailored" },
-      { "type": "loafers", "color": "black" },
-      { "type": "tote_bag", "color": "beige" }
-    ]
-  },
-  {
-    "outfit_id": "casual_everyday_001",
-    "style": "casual",
-    "occasion": "everyday",
-    "season": "spring",
-    "budget": "50-150",
-    "skin_tone": "fair",
-    "items": [
-      { "type": "tshirt", "color": "white" },
-      { "type": "jeans", "color": "blue", "fit": "straight" },
-      { "type": "sneakers", "color": "white" },
-      { "type": "crossbody_bag", "color": "brown" }
-    ]
-  },
-  {
-    "outfit_id": "party_night_001",
-    "style": "chic",
-    "occasion": "party",
-    "season": "summer",
-    "budget": "100-300",
-    "skin_tone": "tan",
-    "items": [
-      { "type": "dress", "color": "black", "style": "bodycon" },
-      { "type": "heels", "color": "black" },
-      { "type": "shoulder_bag", "color": "black" },
-      { "type": "earrings", "color": "gold" }
-    ]
-  },
-  {
-    "outfit_id": "travel_001",
-    "style": "casual",
-    "occasion": "travel",
-    "season": "spring",
-    "budget": "100-300",
-    "skin_tone": "medium",
-    "items": [
-      { "type": "hoodie", "color": "grey", "style": "oversized" },
-      { "type": "leggings", "color": "black" },
-      { "type": "sneakers", "color": "white" },
-      { "type": "backpack", "color": "black" }
-    ]
-  },
-  {
-    "outfit_id": "sport_001",
-    "style": "sport",
-    "occasion": "everyday",
-    "season": "summer",
-    "budget": "100-300",
-    "skin_tone": "deep",
-    "items": [
-      { "type": "tank_top", "color": "black" },
-      { "type": "shorts", "color": "black" },
-      { "type": "sneakers", "color": "white" },
-      { "type": "gym_bag", "color": "black" }
-    ]
-  }
-]
 
+    {
+        "outfit_id":"outfit_001",
+        "style":"chic",
+        "occasion":"work",
+        "season":"fall",
+        "budget":"300-600",
+        "skin_tone":"tan",
+        "items":[
+          {"type":"blazer","color":"camel","style":"oversized wool"},
+          {"type":"blouse","color":"white","style":"button_up"},
+          {"type":"pants","color":"black","style":"ankle"},
+          {"type":"loafers","color":"dark_brown","style":"polished leather"},
+          {"type":"tote_bag","color":"taupe","style":"structured"},
+          {"type":"earrings","color":"gold","style":"minimal"}
+        ]
+      },
+      {
+        "outfit_id":"outfit_002",
+        "style":"streetwear",
+        "occasion":"party",
+        "season":"fall",
+        "budget":"600-1000",
+        "skin_tone":"deep",
+        "items":[
+          {"type":"jacket","color":"black","style":"oversized leather"},
+          {"type":"crop_top","color":"black","style":"monogram bandeau"},
+          {"type":"skirt","color":"black","style":"leather mini"},
+          {"type":"boots","color":"black","style":"knee_high leather"},
+          {"type":"shoulder_bag","color":"black","style":"quilted"},
+          {"type":"sunglasses","color":"black","style":"oversized"},
+          {"type":"earrings","color":"silver","style":"chain"}
+        ]
+      },
+      {
+        "outfit_id":"outfit_003",
+        "style":"casual",
+        "occasion":"everyday",
+        "season":"spring",
+        "budget":"100-300",
+        "skin_tone":"fair",
+        "items":[
+          {"type":"tshirt","color":"white","style":"fitted"},
+          {"type":"pants","color":"beige","style":"wide_leg high_waisted"},
+          {"type":"sneakers","color":"cream","style":"platform"},
+          {"type":"crossbody_bag","color":"beige","style":"structured"},
+          {"type":"sunglasses","color":"black","style":"slim"}
+        ]
+      },
+    
+      {
+        "outfit_id":"outfit_004",
+        "style":"streetwear",
+        "occasion":"party",
+        "season":"fall",
+        "budget":"300-600",
+        "skin_tone":"tan",
+        "items":[
+          {"type":"jacket","color":"black","style":"cropped leather biker"},
+          {"type":"crop_top","color":"black","style":"ribbed fitted"},
+          {"type":"skirt","color":"black","style":"leather mini"},
+          {"type":"boots","color":"black","style":"knee_high leather"},
+          {"type":"earrings","color":"silver","style":"statement"},
+          {"type":"necklace","color":"silver","style":"chain"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_005",
+        "style":"chic",
+        "occasion":"everyday",
+        "season":"fall",
+        "budget":"300-600",
+        "skin_tone":"medium",
+        "items":[
+          {"type":"sweater","color":"beige","style":"lightweight knit"},
+          {"type":"pants","color":"ivory","style":"tailored ankle"},
+          {"type":"loafers","color":"camel","style":"leather"},
+          {"type":"handbag","color":"taupe","style":"structured"},
+          {"type":"sunglasses","color":"black","style":"slim"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_006",
+        "style":"casual",
+        "occasion":"everyday",
+        "season":"spring",
+        "budget":"100-300",
+        "skin_tone":"medium",
+        "items":[
+          {"type":"sweater","color":"lavender","style":"oversized knit"},
+          {"type":"pants","color":"ivory","style":"tapered"},
+          {"type":"sneakers","color":"pastel_blue","style":"casual"},
+          {"type":"handbag","color":"mint_green","style":"structured"},
+          {"type":"sunglasses","color":"black","style":"oversized"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_007",
+        "style":"streetwear",
+        "occasion":"everyday",
+        "season":"fall",
+        "budget":"300-600",
+        "skin_tone":"tan",
+        "items":[
+          {"type":"jacket","color":"black","style":"oversized utility"},
+          {"type":"pants","color":"black","style":"cargo"},
+          {"type":"sneakers","color":"black","style":"chunky performance"},
+          {"type":"crossbody_bag","color":"black","style":"tactical"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_008",
+        "style":"chic",
+        "occasion":"work",
+        "season":"fall",
+        "budget":"600-1000",
+        "skin_tone":"deep",
+        "items":[
+          {"type":"blouse","color":"chocolate_brown","style":"satin button_up"},
+          {"type":"pants","color":"chocolate_brown","style":"tailored straight_leg"},
+          {"type":"heels","color":"brown","style":"pointed leather"},
+          {"type":"handbag","color":"dark_brown","style":"structured"},
+          {"type":"earrings","color":"gold","style":"elegant"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_009",
+        "style":"casual",
+        "occasion":"travel",
+        "season":"summer",
+        "budget":"100-300",
+        "skin_tone":"fair",
+        "items":[
+          {"type":"blazer","color":"black","style":"structured tailored"},
+          {"type":"camisole","color":"champagne","style":"satin draped"},
+          {"type":"pants","color":"black","style":"high_waisted slim_fit"},
+          {"type":"heels","color":"black","style":"pointed stiletto"},
+          {"type":"shoulder_bag","color":"black","style":"quilted chain"},
+          {"type":"necklace","color":"gold","style":"layered"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_010",
+        "style":"chic",
+        "occasion":"work",
+        "season":"fall",
+        "budget":"600-1000",
+        "skin_tone":"medium",
+        "items":[
+          {"type":"blazer","color":"black","style":"structured"},
+          {"type":"blouse","color":"beige","style":"silk"},
+          {"type":"pants","color":"black","style":"tailored"},
+          {"type":"heels","color":"black","style":"pointed"},
+          {"type":"handbag","color":"black","style":"luxury"},
+          {"type":"earrings","color":"gold","style":"minimal"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_011",
+        "style":"chic",
+        "occasion":"date",
+        "season":"spring",
+        "budget":"300-600",
+        "skin_tone":"light",
+        "items":[
+          {"type":"dress","color":"soft_pink","style":"satin"},
+          {"type":"heels","color":"nude","style":"classic"},
+          {"type":"earrings","color":"pearl","style":"elegant"},
+          {"type":"clutch_bag","color":"white","style":"small"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_012",
+        "style":"streetwear",
+        "occasion":"everyday",
+        "season":"fall",
+        "budget":"100-300",
+        "skin_tone":"tan",
+        "items":[
+          {"type":"hoodie","color":"olive","style":"oversized"},
+          {"type":"pants","color":"beige","style":"cargo"},
+          {"type":"sneakers","color":"white","style":"casual"},
+          {"type":"crossbody_bag","color":"black","style":"casual"},
+          {"type":"cap","color":"black","style":"classic"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_013",
+        "style":"chic",
+        "occasion":"party",
+        "season":"summer",
+        "budget":"600-1000",
+        "skin_tone":"dark",
+        "items":[
+          {"type":"dress","color":"black","style":"satin fitted"},
+          {"type":"heels","color":"black","style":"high"},
+          {"type":"earrings","color":"silver","style":"diamond"},
+          {"type":"clutch_bag","color":"black","style":"luxury"}
+        ]
+      },
+
+      {
+        "outfit_id":"outfit_014",
+        "style":"sport",
+        "occasion":"everyday",
+        "season":"summer",
+        "budget":"100-300",
+        "skin_tone":"fair",
+        "items":[
+          {"type":"jacket","color":"grey","style":"cropped zip"},
+          {"type":"leggings","color":"grey","style":"flared ribbed"},
+          {"type":"sneakers","color":"white","style":"chunky retro"},
+          {"type":"headphones","color":"silver","style":"minimal"}
+        ]
+      },
+      
+        {
+          "outfit_id":"outfit_015",
+          "style":"chic",
+          "occasion":"work",
+          "season":"winter",
+          "budget":"600-1000",
+          "skin_tone":"light",
+          "items":[
+            {"type":"coat","color":"ivory","style":"oversized wool wrap"},
+            {"type":"sweater","color":"cream","style":"cashmere turtleneck"},
+            {"type":"pants","color":"beige","style":"wide_leg"},
+            {"type":"boots","color":"brown","style":"pointed leather"},
+            {"type":"handbag","color":"brown","style":"sculptural leather"},
+            {"type":"earrings","color":"gold","style":"layered"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_016",
+          "style":"chic",
+          "occasion":"party",
+          "season":"summer",
+          "budget":"300-600",
+          "skin_tone":"medium",
+          "items":[
+            {"type":"dress","color":"deep_red","style":"satin slip asymmetrical"},
+            {"type":"heels","color":"red","style":"strappy"},
+            {"type":"earrings","color":"metallic","style":"sculptural"},
+            {"type":"shoulder_bag","color":"black","style":"glossy mini"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_017",
+          "style":"casual",
+          "occasion":"everyday",
+          "season":"spring",
+          "budget":"100-300",
+          "skin_tone":"fair",
+          "items":[
+            {"type":"cardigan","color":"sage_green","style":"oversized"},
+            {"type":"tank_top","color":"white","style":"ribbed"},
+            {"type":"jeans","color":"cream","style":"relaxed denim"},
+            {"type":"sneakers","color":"white","style":"retro"},
+            {"type":"tote_bag","color":"beige","style":"woven"},
+            {"type":"earrings","color":"gold","style":"thin"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_018",
+          "style":"chic",
+          "occasion":"travel",
+          "season":"fall",
+          "budget":"600-1000",
+          "skin_tone":"tan",
+          "items":[
+            {"type":"coat","color":"beige","style":"oversized trench"},
+            {"type":"shirt","color":"white","style":"poplin relaxed"},
+            {"type":"pants","color":"beige","style":"flowing tailored"},
+            {"type":"loafers","color":"tan","style":"suede"},
+            {"type":"tote_bag","color":"beige","style":"oversized designer"},
+            {"type":"sunglasses","color":"black","style":"sleek"},
+            {"type":"earrings","color":"gold","style":"layered"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_019",
+          "style":"streetwear",
+          "occasion":"party",
+          "season":"fall",
+          "budget":"300-600",
+          "skin_tone":"deep",
+          "items":[
+            {"type":"hoodie","color":"washed_black","style":"oversized"},
+            {"type":"pants","color":"black","style":"parachute cargo"},
+            {"type":"necklace","color":"silver","style":"chain layered"},
+            {"type":"sneakers","color":"black","style":"neon_accent"},
+            {"type":"crossbody_bag","color":"black","style":"tech"},
+            {"type":"sunglasses","color":"reflective","style":"minimal"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_020",
+          "style":"chic",
+          "occasion":"work",
+          "season":"spring",
+          "budget":"300-600",
+          "skin_tone":"medium",
+          "items":[
+            {"type":"blazer","color":"powder_blue","style":"oversized"},
+            {"type":"tank_top","color":"white","style":"fitted"},
+            {"type":"pants","color":"cream","style":"wide_leg"},
+            {"type":"heels","color":"cream","style":"pointed slingback"},
+            {"type":"handbag","color":"brown","style":"structured leather"},
+            {"type":"earrings","color":"gold","style":"minimal layered"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_021",
+          "style":"streetwear",
+          "occasion":"party",
+          "season":"fall",
+          "budget":"600-1000",
+          "skin_tone":"light",
+          "items":[
+            {"type":"jacket","color":"black","style":"oversized leather bomber"},
+            {"type":"top","color":"black","style":"monochrome fitted"},
+            {"type":"pants","color":"black","style":"relaxed leather"},
+            {"type":"boots","color":"black","style":"chunky"},
+            {"type":"shoulder_bag","color":"black","style":"luxury"},
+            {"type":"earrings","color":"silver","style":"statement"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_022",
+          "style":"casual",
+          "occasion":"everyday",
+          "season":"summer",
+          "budget":"100-300",
+          "skin_tone":"tan",
+          "items":[
+            {"type":"shirt","color":"butter_yellow","style":"linen"},
+            {"type":"skirt","color":"white","style":"flowing maxi"},
+            {"type":"sandals","color":"brown","style":"minimal leather"},
+            {"type":"shoulder_bag","color":"beige","style":"raffia"},
+            {"type":"earrings","color":"shell","style":"layered"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_023",
+          "style":"casual",
+          "occasion":"everyday",
+          "season":"winter",
+          "budget":"100-300",
+          "skin_tone":"fair",
+          "items":[
+            {"type":"sweater","color":"oatmeal","style":"oversized knit"},
+            {"type":"coat","color":"cream","style":"long"},
+            {"type":"pants","color":"cream","style":"relaxed"},
+            {"type":"boots","color":"tan","style":"suede platform"},
+            {"type":"scarf","color":"cream","style":"oversized"},
+            {"type":"tote_bag","color":"beige","style":"structured"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_024",
+          "style":"chic",
+          "occasion":"party",
+          "season":"summer",
+          "budget":"600-1000",
+          "skin_tone":"deep",
+          "items":[
+            {"type":"dress","color":"emerald_green","style":"satin draped open_back"},
+            {"type":"heels","color":"metallic","style":"elegant"},
+            {"type":"earrings","color":"gold","style":"layered"},
+            {"type":"clutch_bag","color":"metallic","style":"sculptural"}
+          ]
+        },
+
+        {
+          "outfit_id":"outfit_025",
+          "style":"chic",
+          "occasion":"travel",
+          "season":"fall",
+          "budget":"300-600",
+          "skin_tone":"medium",
+          "items":[
+            {"type":"coat","color":"charcoal","style":"oversized wool"},
+            {"type":"tshirt","color":"white","style":"fitted"},
+            {"type":"pants","color":"grey","style":"relaxed tailored"},
+            {"type":"sneakers","color":"white","style":"retro"},
+            {"type":"tote_bag","color":"black","style":"oversized leather"}
+          ]
+        },
+        
+          {
+            "outfit_id":"outfit_026",
+            "style":"streetwear",
+            "occasion":"everyday",
+            "season":"spring",
+            "budget":"100-300",
+            "skin_tone":"light",
+            "items":[
+              {"type":"hoodie","color":"grey","style":"cropped zip"},
+              {"type":"pants","color":"grey","style":"oversized parachute cargo"},
+              {"type":"sneakers","color":"white","style":"retro chunky"},
+              {"type":"shoulder_bag","color":"black","style":"mini"},
+              {"type":"sunglasses","color":"grey","style":"tinted"},
+              {"type":"earrings","color":"silver","style":"layered"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_027",
+            "style":"chic",
+            "occasion":"work",
+            "season":"winter",
+            "budget":"600-1000",
+            "skin_tone":"deep",
+            "items":[
+              {"type":"coat","color":"black","style":"oversized wool"},
+              {"type":"sweater","color":"black","style":"fitted turtleneck knit"},
+              {"type":"pants","color":"black","style":"wide_leg tailored"},
+              {"type":"boots","color":"black","style":"pointed leather"},
+              {"type":"handbag","color":"black","style":"sculptural"},
+              {"type":"earrings","color":"gold","style":"sleek"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_028",
+            "style":"chic",
+            "occasion":"everyday",
+            "season":"spring",
+            "budget":"300-600",
+            "skin_tone":"light",
+            "items":[
+              {"type":"shirt","color":"blue","style":"oversized striped cotton"},
+              {"type":"skirt","color":"ivory","style":"flowing midi"},
+              {"type":"belt","color":"brown","style":"structured leather"},
+              {"type":"heels","color":"nude","style":"pointed"},
+              {"type":"handbag","color":"brown","style":"structured leather"},
+              {"type":"earrings","color":"gold","style":"minimal"},
+              {"type":"sunglasses","color":"black","style":"oversized"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_029",
+            "style":"chic",
+            "occasion":"work",
+            "season":"fall",
+            "budget":"600-1000",
+            "skin_tone":"medium",
+            "items":[
+              {"type":"blazer","color":"warm_grey","style":"oversized belted"},
+              {"type":"pants","color":"warm_grey","style":"wide_leg tailored"},
+              {"type":"heels","color":"orange","style":"pointed leather"},
+              {"type":"handbag","color":"brown","style":"structured designer"},
+              {"type":"earrings","color":"gold","style":"minimal"},
+              {"type":"sunglasses","color":"black","style":"oversized"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_030",
+            "style":"chic",
+            "occasion":"date",
+            "season":"summer",
+            "budget":"300-600",
+            "skin_tone":"tan",
+            "items":[
+              {"type":"blouse","color":"pale_blue","style":"oversized linen"},
+              {"type":"skirt","color":"taupe","style":"flowing midi"},
+              {"type":"belt","color":"brown","style":"leather"},
+              {"type":"heels","color":"nude","style":"pointed"},
+              {"type":"shoulder_bag","color":"brown","style":"structured"},
+              {"type":"earrings","color":"gold","style":"minimal"},
+              {"type":"sunglasses","color":"black","style":"classic"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_031",
+            "style":"chic",
+            "occasion":"work",
+            "season":"fall",
+            "budget":"300-600",
+            "skin_tone":"medium",
+            "items":[
+              {"type":"blazer","color":"espresso","style":"oversized"},
+              {"type":"tank_top","color":"cream","style":"ribbed fitted"},
+              {"type":"pants","color":"ivory","style":"wide_leg flowing"},
+              {"type":"heels","color":"chocolate","style":"pointed leather"},
+              {"type":"handbag","color":"dark_brown","style":"structured"},
+              {"type":"earrings","color":"gold","style":"statement"},
+              {"type":"sunglasses","color":"black","style":"sleek"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_032",
+            "style":"chic",
+            "occasion":"date",
+            "season":"summer",
+            "budget":"300-600",
+            "skin_tone":"tan",
+            "items":[
+              {"type":"dress","color":"butter_cream","style":"sleeveless maxi draped"},
+              {"type":"sandals","color":"tan","style":"leather minimal"},
+              {"type":"handbag","color":"beige","style":"woven structured"},
+              {"type":"earrings","color":"gold","style":"layered"},
+              {"type":"sunglasses","color":"black","style":"oversized"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_033",
+            "style":"casual",
+            "occasion":"everyday",
+            "season":"spring",
+            "budget":"100-300",
+            "skin_tone":"light",
+            "items":[
+              {"type":"shirt","color":"white","style":"oversized linen"},
+              {"type":"jeans","color":"dark_indigo","style":"relaxed straight_leg"},
+              {"type":"belt","color":"cognac","style":"slim leather"},
+              {"type":"heels","color":"beige","style":"slingback"},
+              {"type":"handbag","color":"brown","style":"structured suede"},
+              {"type":"earrings","color":"gold","style":"minimal"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_034",
+            "style":"chic",
+            "occasion":"work",
+            "season":"spring",
+            "budget":"600-1000",
+            "skin_tone":"deep",
+            "items":[
+              {"type":"blazer","color":"stone_beige","style":"oversized sculpted"},
+              {"type":"pants","color":"stone_beige","style":"pleated wide_leg"},
+              {"type":"bodysuit","color":"nude","style":"fitted"},
+              {"type":"heels","color":"cream","style":"pointed"},
+              {"type":"handbag","color":"ivory","style":"structured"},
+              {"type":"earrings","color":"gold","style":"layered"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_035",
+            "style":"streetwear",
+            "occasion":"everyday",
+            "season":"fall",
+            "budget":"100-300",
+            "skin_tone":"medium",
+            "items":[
+              {"type":"jacket","color":"washed_taupe","style":"oversized bomber"},
+              {"type":"crop_top","color":"white","style":"fitted"},
+              {"type":"pants","color":"taupe","style":"relaxed parachute"},
+              {"type":"sneakers","color":"cream","style":"retro"},
+              {"type":"crossbody_bag","color":"grey","style":"structured"},
+              {"type":"earrings","color":"silver","style":"minimal"}
+            ]
+          },
+          
+          
+            {
+              "outfit_id":"outfit_036",
+              "style":"chic",
+              "occasion":"party",
+              "season":"summer",
+              "budget":"600-1000",
+              "skin_tone":"fair",
+              "items":[
+                {"type":"dress","color":"blush","style":"satin draped midi asymmetrical"},
+                {"type":"heels","color":"metallic","style":"elegant"},
+                {"type":"clutch_bag","color":"metallic","style":"sculptural"},
+                {"type":"earrings","color":"gold","style":"delicate"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_037",
+              "style":"casual",
+              "occasion":"travel",
+              "season":"fall",
+              "budget":"100-300",
+              "skin_tone":"tan",
+              "items":[
+                {"type":"coat","color":"oatmeal","style":"oversized trench"},
+                {"type":"tshirt","color":"white","style":"fitted"},
+                {"type":"pants","color":"cream","style":"relaxed jogger"},
+                {"type":"sneakers","color":"white","style":"retro"},
+                {"type":"tote_bag","color":"brown","style":"structured leather"},
+                {"type":"earrings","color":"gold","style":"minimal"},
+                {"type":"sunglasses","color":"black","style":"sleek"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_038",
+              "style":"chic",
+              "occasion":"party",
+              "season":"fall",
+              "budget":"600-1000",
+              "skin_tone":"deep",
+              "items":[
+                {"type":"jumpsuit","color":"chocolate","style":"satin tailored wide_leg"},
+                {"type":"heels","color":"metallic","style":"pointed"},
+                {"type":"earrings","color":"gold","style":"sculptural"},
+                {"type":"handbag","color":"black","style":"structured mini"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_039",
+              "style":"sport",
+              "occasion":"everyday",
+              "season":"spring",
+              "budget":"100-300",
+              "skin_tone":"light",
+              "items":[
+                {"type":"top","color":"cream","style":"fitted knit polo"},
+                {"type":"skirt","color":"cream","style":"structured pleated tennis"},
+                {"type":"cardigan","color":"cream","style":"oversized"},
+                {"type":"sneakers","color":"white","style":"retro"},
+                {"type":"handbag","color":"white","style":"structured"},
+                {"type":"earrings","color":"gold","style":"minimal"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_040",
+              "style":"chic",
+              "occasion":"work",
+              "season":"winter",
+              "budget":"600-1000",
+              "skin_tone":"medium",
+              "items":[
+                {"type":"coat","color":"ivory","style":"oversized wool"},
+                {"type":"sweater","color":"cream","style":"knit"},
+                {"type":"pants","color":"cream","style":"flowing"},
+                {"type":"boots","color":"tan","style":"suede"},
+                {"type":"tote_bag","color":"cream","style":"oversized structured"},
+                {"type":"earrings","color":"gold","style":"layered"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_041",
+              "style":"casual",
+              "occasion":"travel",
+              "season":"summer",
+              "budget":"100-300",
+              "skin_tone":"tan",
+              "items":[
+                {"type":"shirt","color":"white","style":"oversized linen"},
+                {"type":"shorts","color":"sand","style":"relaxed linen"},
+                {"type":"sandals","color":"brown","style":"woven leather"},
+                {"type":"tote_bag","color":"beige","style":"raffia"},
+                {"type":"earrings","color":"shell","style":"minimal"},
+                {"type":"sunglasses","color":"black","style":"oversized"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_042",
+              "style":"chic",
+              "occasion":"party",
+              "season":"winter",
+              "budget":"600-1000",
+              "skin_tone":"deep",
+              "items":[
+                {"type":"dress","color":"black","style":"asymmetrical sculptural gown"},
+                {"type":"heels","color":"black","style":"pointed"},
+                {"type":"clutch_bag","color":"metallic","style":"minimal"},
+                {"type":"earrings","color":"gold","style":"statement"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_043",
+              "style":"chic",
+              "occasion":"everyday",
+              "season":"fall",
+              "budget":"300-600",
+              "skin_tone":"medium",
+              "items":[
+                {"type":"coat","color":"camel","style":"oversized herringbone wool"},
+                {"type":"sweater","color":"burnt_cinnamon","style":"turtleneck knit"},
+                {"type":"pants","color":"olive","style":"tailored ankle"},
+                {"type":"boots","color":"brown","style":"lace_up leather"},
+                {"type":"scarf","color":"earth_tone","style":"oversized plaid"},
+                {"type":"tote_bag","color":"cognac","style":"structured leather"},
+                {"type":"necklace","color":"gold","style":"layered"},
+                {"type":"sunglasses","color":"black","style":"oversized"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_044",
+              "style":"chic",
+              "occasion":"work",
+              "season":"spring",
+              "budget":"300-600",
+              "skin_tone":"fair",
+              "items":[
+                {"type":"blazer","color":"mint","style":"oversized"},
+                {"type":"top","color":"ivory","style":"fitted"},
+                {"type":"skirt","color":"lavender","style":"flowing pleated midi"},
+                {"type":"heels","color":"nude","style":"pointed"},
+                {"type":"handbag","color":"pastel","style":"structured"},
+                {"type":"necklace","color":"gemstone","style":"statement"},
+                {"type":"sunglasses","color":"black","style":"oversized"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_045",
+              "style":"streetwear",
+              "occasion":"everyday",
+              "season":"fall",
+              "budget":"100-300",
+              "skin_tone":"light",
+              "items":[
+                {"type":"cardigan","color":"mocha","style":"oversized striped knit"},
+                {"type":"crop_top","color":"cream","style":"ribbed fitted"},
+                {"type":"pants","color":"chocolate","style":"relaxed cargo"},
+                {"type":"sneakers","color":"cream","style":"chunky platform"},
+                {"type":"earrings","color":"gold","style":"minimal"}
+              ]
+            },
+            
+              {
+                "outfit_id":"outfit_046",
+                "style":"minimalist",
+                "occasion":"everyday",
+                "season":"winter",
+                "budget":"150-400",
+                "skin_tone":"dark",
+                "items":[
+                  {"type":"sweater","color":"camel","style":"oversized knit"},
+                  {"type":"scarf","color":"mocha","style":"thick wool"},
+                  {"type":"beanie","color":"mocha","style":"ribbed"},
+                  {"type":"pants","color":"black","style":"slim ankle"},
+                  {"type":"boots","color":"dark_brown","style":"chelsea leather"},
+                  {"type":"tote_bag","color":"black","style":"oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_047",
+                "style":"elegant",
+                "occasion":"evening",
+                "season":"spring",
+                "budget":"200-600",
+                "skin_tone":"light",
+                "items":[
+                  {"type":"camisole","color":"champagne","style":"satin cowl_neck"},
+                  {"type":"skirt","color":"black","style":"high_waisted midi"},
+                  {"type":"heels","color":"black","style":"pointed ankle_strap stiletto"},
+                  {"type":"earrings","color":"gold","style":"delicate"},
+                  {"type":"clutch_bag","color":"black","style":"sleek"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_048",
+                "style":"minimalist",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"100-350",
+                "skin_tone":"light",
+                "items":[
+                  {"type":"shirt","color":"white","style":"linen button_up relaxed"},
+                  {"type":"pants","color":"sky_blue","style":"wide_leg linen"},
+                  {"type":"sandals","color":"tan","style":"leather"},
+                  {"type":"tote_bag","color":"beige","style":"woven straw"},
+                  {"type":"sunglasses","color":"black","style":"cat_eye oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_049",
+                "style":"streetwear",
+                "occasion":"everyday",
+                "season":"fall",
+                "budget":"100-300",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"hoodie","color":"cream","style":"oversized"},
+                  {"type":"jacket","color":"taupe","style":"cropped puffer"},
+                  {"type":"pants","color":"charcoal","style":"relaxed parachute"},
+                  {"type":"sneakers","color":"grey","style":"retro"},
+                  {"type":"crossbody_bag","color":"black","style":"structured"},
+                  {"type":"sunglasses","color":"black","style":"sleek"},
+                  {"type":"earrings","color":"silver","style":"minimal"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_050",
+                "style":"casual",
+                "occasion":"everyday",
+                "season":"spring",
+                "budget":"100-300",
+                "skin_tone":"medium",
+                "items":[
+                  {"type":"shirt","color":"white","style":"oversized structured"},
+                  {"type":"tank_top","color":"cream","style":"ribbed fitted"},
+                  {"type":"jeans","color":"light_blue","style":"wide_leg relaxed"},
+                  {"type":"sneakers","color":"white","style":"retro"},
+                  {"type":"tote_bag","color":"beige","style":"woven"},
+                  {"type":"earrings","color":"gold","style":"minimal"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_051",
+                "style":"sport",
+                "occasion":"travel",
+                "season":"fall",
+                "budget":"100-300",
+                "skin_tone":"tan",
+                "items":[
+                  {"type":"jacket","color":"mocha","style":"oversized bomber"},
+                  {"type":"crop_top","color":"cream","style":"fitted"},
+                  {"type":"pants","color":"cream","style":"relaxed jogger"},
+                  {"type":"sneakers","color":"cream","style":"chunky retro"},
+                  {"type":"tote_bag","color":"brown","style":"oversized leather"},
+                  {"type":"earrings","color":"gold","style":"layered"},
+                  {"type":"sunglasses","color":"black","style":"sleek"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_052",
+                "style":"streetwear",
+                "occasion":"everyday",
+                "season":"spring",
+                "budget":"100-300",
+                "skin_tone":"medium",
+                "items":[
+                  {"type":"tshirt","color":"black","style":"cropped fitted"},
+                  {"type":"jacket","color":"washed_olive","style":"oversized utility"},
+                  {"type":"pants","color":"beige","style":"relaxed cargo"},
+                  {"type":"sneakers","color":"cream","style":"chunky"},
+                  {"type":"crossbody_bag","color":"black","style":"structured mini"},
+                  {"type":"earrings","color":"silver","style":"layered"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_053",
+                "style":"casual",
+                "occasion":"everyday",
+                "season":"winter",
+                "budget":"100-300",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"cardigan","color":"mocha","style":"oversized knit"},
+                  {"type":"dress","color":"cream","style":"ribbed fitted"},
+                  {"type":"boots","color":"tan","style":"chunky suede"},
+                  {"type":"tote_bag","color":"brown","style":"structured"},
+                  {"type":"earrings","color":"gold","style":"layered"},
+                  {"type":"sunglasses","color":"black","style":"oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_054",
+                "style":"streetwear",
+                "occasion":"everyday",
+                "season":"winter",
+                "budget":"300-600",
+                "skin_tone":"deep",
+                "items":[
+                  {"type":"hoodie","color":"charcoal","style":"oversized"},
+                  {"type":"jacket","color":"black","style":"structured leather bomber"},
+                  {"type":"pants","color":"black","style":"relaxed cargo"},
+                  {"type":"sneakers","color":"black","style":"chunky"},
+                  {"type":"crossbody_bag","color":"black","style":"tech"},
+                  {"type":"necklace","color":"silver","style":"chain"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_055",
+                "style":"streetwear",
+                "occasion":"everyday",
+                "season":"fall",
+                "budget":"100-300",
+                "skin_tone":"tan",
+                "items":[
+                  {"type":"jacket","color":"faded_blue","style":"oversized denim"},
+                  {"type":"tank_top","color":"white","style":"fitted"},
+                  {"type":"pants","color":"olive","style":"relaxed parachute"},
+                  {"type":"sneakers","color":"cream","style":"chunky"},
+                  {"type":"crossbody_bag","color":"black","style":"sling"},
+                  {"type":"earrings","color":"silver","style":"minimal"}
+                ]
+              },
+        
+          {
+            "outfit_id":"outfit_056",
+            "style":"sport",
+            "occasion":"everyday",
+            "season":"summer",
+            "budget":"50-100",
+            "skin_tone":"fair",
+            "items":[
+              {"type":"sweatshirt","color":"pale_blue","style":"oversized"},
+              {"type":"shorts","color":"white","style":"biker"},
+              {"type":"sneakers","color":"cream","style":"chunky"},
+              {"type":"tote_bag","color":"beige","style":"canvas oversized"},
+              {"type":"earrings","color":"gold","style":"minimal"},
+              {"type":"cap","color":"white","style":"baseball"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_057",
+            "style":"chic",
+            "occasion":"everyday",
+            "season":"summer",
+            "budget":"100-300",
+            "skin_tone":"fair",
+            "items":[
+              {"type":"tank_top","color":"butter_yellow","style":"ribbed fitted"},
+              {"type":"pants","color":"white","style":"wide_leg flowing"},
+              {"type":"sandals","color":"tan","style":"minimal leather"},
+              {"type":"handbag","color":"cream","style":"structured"},
+              {"type":"earrings","color":"gold","style":"minimal"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_058",
+            "style":"casual",
+            "occasion":"travel",
+            "season":"summer",
+            "budget":"100-300",
+            "skin_tone":"medium",
+            "items":[
+              {"type":"shirt","color":"sky_blue","style":"oversized striped linen"},
+              {"type":"crop_top","color":"white","style":"bandeau"},
+              {"type":"skirt","color":"white","style":"flowing maxi"},
+              {"type":"sandals","color":"brown","style":"leather"},
+              {"type":"shoulder_bag","color":"beige","style":"woven"},
+              {"type":"earrings","color":"shell","style":"minimal"},
+              {"type":"sunglasses","color":"black","style":"oversized"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_059",
+            "style":"streetwear",
+            "occasion":"everyday",
+            "season":"summer",
+            "budget":"50-100",
+            "skin_tone":"light",
+            "items":[
+              {"type":"top","color":"white","style":"fitted sleeveless"},
+              {"type":"shorts","color":"light_blue","style":"bermuda denim relaxed"},
+              {"type":"sneakers","color":"white","style":"retro"},
+              {"type":"tote_bag","color":"beige","style":"canvas oversized"},
+              {"type":"earrings","color":"gold","style":"layered"},
+              {"type":"cap","color":"white","style":"baseball"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_060",
+            "style":"casual",
+            "occasion":"everyday",
+            "season":"summer",
+            "budget":"100-300",
+            "skin_tone":"fair",
+            "items":[
+              {"type":"shirt","color":"blush_pink","style":"oversized linen"},
+              {"type":"dress","color":"white","style":"ribbed fitted"},
+              {"type":"sneakers","color":"white","style":"minimal"},
+              {"type":"handbag","color":"pastel","style":"structured"},
+              {"type":"earrings","color":"gold","style":"layered"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_061",
+            "style":"streetwear",
+            "occasion":"travel",
+            "season":"summer",
+            "budget":"50-100",
+            "skin_tone":"tan",
+            "items":[
+              {"type":"shirt","color":"beige","style":"oversized graphic linen"},
+              {"type":"shorts","color":"beige","style":"biker"},
+              {"type":"crop_top","color":"beige","style":"fitted"},
+              {"type":"sandals","color":"cream","style":"chunky"},
+              {"type":"crossbody_bag","color":"black","style":"sling"},
+              {"type":"earrings","color":"gold","style":"hoops"},
+              {"type":"sunglasses","color":"black","style":"oversized"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_062",
+            "style":"chic",
+            "occasion":"date",
+            "season":"summer",
+            "budget":"300-600",
+            "skin_tone":"deep",
+            "items":[
+              {"type":"dress","color":"chocolate_brown","style":"sleeveless knit side_slit"},
+              {"type":"sandals","color":"brown","style":"minimal leather"},
+              {"type":"handbag","color":"caramel","style":"structured"},
+              {"type":"earrings","color":"gold","style":"minimal"},
+              {"type":"sunglasses","color":"black","style":"sleek"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_063",
+            "style":"casual",
+            "occasion":"everyday",
+            "season":"summer",
+            "budget":"50-100",
+            "skin_tone":"medium",
+            "items":[
+              {"type":"shirt","color":"white","style":"oversized crisp"},
+              {"type":"pants","color":"beige","style":"drawstring flowing"},
+              {"type":"sandals","color":"brown","style":"leather slides"},
+              {"type":"tote_bag","color":"beige","style":"woven"},
+              {"type":"earrings","color":"gold","style":"minimal"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_064",
+            "style":"sport",
+            "occasion":"everyday",
+            "season":"summer",
+            "budget":"50-100",
+            "skin_tone":"light",
+            "items":[
+              {"type":"sweatshirt","color":"cream","style":"oversized vintage graphic"},
+              {"type":"shorts","color":"cream","style":"athletic relaxed"},
+              {"type":"sneakers","color":"white","style":"retro"},
+              {"type":"socks","color":"white","style":"tube"},
+              {"type":"cap","color":"white","style":"baseball"},
+              {"type":"crossbody_bag","color":"black","style":"mini"}
+            ]
+          },
+
+          {
+            "outfit_id":"outfit_065",
+            "style":"casual",
+            "occasion":"everyday",
+            "season":"summer",
+            "budget":"100-250",
+            "skin_tone":"light",
+            "items":[
+              {"type":"tank_top","color":"sage_green","style":"ribbed"},
+              {"type":"shirt","color":"sage_green","style":"oversized striped button_up"},
+              {"type":"shorts","color":"white","style":"high_waisted denim"},
+              {"type":"sneakers","color":"sage_green","style":"retro"},
+              {"type":"cap","color":"cream","style":"baseball"},
+              {"type":"shoulder_bag","color":"beige","style":"minimal"},
+              {"type":"earrings","color":"gold","style":"hoops"},
+              {"type":"sunglasses","color":"black","style":"round"}
+            ]
+          },
+          
+            {
+              "outfit_id":"outfit_066",
+              "style":"elegant",
+              "occasion":"work",
+              "season":"spring",
+              "budget":"300-700",
+              "skin_tone":"olive",
+              "items":[
+                {"type":"shirt","color":"powder_blue","style":"oversized button_up"},
+                {"type":"skirt","color":"taupe","style":"flowing midi"},
+                {"type":"belt","color":"cognac","style":"statement leather"},
+                {"type":"heels","color":"brown","style":"pointed"},
+                {"type":"handbag","color":"brown","style":"structured"},
+                {"type":"sunglasses","color":"black","style":"oversized"},
+                {"type":"earrings","color":"gold","style":"delicate"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_067",
+              "style":"bohemian",
+              "occasion":"vacation",
+              "season":"summer",
+              "budget":"200-600",
+              "skin_tone":"light",
+              "items":[
+                {"type":"dress","color":"white_blue","style":"floral maxi puff_sleeve slit wrap"},
+                {"type":"earrings","color":"gold","style":"delicate"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_068",
+              "style":"casual",
+              "occasion":"everyday",
+              "season":"summer",
+              "budget":"100-300",
+              "skin_tone":"light",
+              "items":[
+                {"type":"top","color":"chocolate_brown","style":"sleeveless mock_neck fitted"},
+                {"type":"jeans","color":"light_blue","style":"ultra_wide_leg"},
+                {"type":"handbag","color":"brown","style":"bucket leather"},
+                {"type":"sunglasses","color":"black","style":"oversized"},
+                {"type":"earrings","color":"gold","style":"minimal"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_069",
+              "style":"streetwear",
+              "occasion":"work",
+              "season":"fall",
+              "budget":"200-500",
+              "skin_tone":"light",
+              "items":[
+                {"type":"blazer","color":"taupe","style":"oversized tailored"},
+                {"type":"crop_top","color":"black","style":"fitted"},
+                {"type":"pants","color":"black","style":"relaxed high_waisted"},
+                {"type":"boots","color":"black","style":"combat"},
+                {"type":"handbag","color":"black","style":"structured"},
+                {"type":"sunglasses","color":"black","style":"oversized"},
+                {"type":"earrings","color":"gold","style":"layered"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_070",
+              "style":"streetwear",
+              "occasion":"party",
+              "season":"fall",
+              "budget":"600-1000",
+              "skin_tone":"deep",
+              "items":[
+                {"type":"jacket","color":"silver","style":"oversized bomber metallic"},
+                {"type":"bodysuit","color":"graphite","style":"sculpted fitted"},
+                {"type":"pants","color":"black","style":"ultra_wide parachute"},
+                {"type":"sneakers","color":"silver","style":"pointed futuristic"},
+                {"type":"shoulder_bag","color":"silver","style":"micro chrome"},
+                {"type":"earrings","color":"silver","style":"geometric"},
+                {"type":"sunglasses","color":"black","style":"futuristic"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_071",
+              "style":"chic",
+              "occasion":"date",
+              "season":"spring",
+              "budget":"600-1000",
+              "skin_tone":"fair",
+              "items":[
+                {"type":"blazer","color":"oat_beige","style":"oversized"},
+                {"type":"dress","color":"cream","style":"semi_sheer maxi draped"},
+                {"type":"heels","color":"cream","style":"pointed slingback"},
+                {"type":"earrings","color":"gold","style":"sculptural"},
+                {"type":"handbag","color":"ivory","style":"structured"},
+                {"type":"necklace","color":"pearl","style":"layered"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_072",
+              "style":"streetwear",
+              "occasion":"everyday",
+              "season":"fall",
+              "budget":"300-600",
+              "skin_tone":"medium",
+              "items":[
+                {"type":"coat","color":"espresso","style":"oversized utility trench"},
+                {"type":"top","color":"mocha","style":"fitted zip"},
+                {"type":"skirt","color":"brown","style":"cargo maxi structured"},
+                {"type":"sneakers","color":"black","style":"chunky futuristic"},
+                {"type":"crossbody_bag","color":"brown","style":"utility belt"},
+                {"type":"ring","color":"silver","style":"statement"},
+                {"type":"sunglasses","color":"black","style":"rectangular"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_073",
+              "style":"chic",
+              "occasion":"travel",
+              "season":"summer",
+              "budget":"600-1000",
+              "skin_tone":"tan",
+              "items":[
+                {"type":"shirt","color":"butter_cream","style":"silk oversized"},
+                {"type":"pants","color":"butter_cream","style":"flowing wide_leg"},
+                {"type":"sandals","color":"tan","style":"minimal leather"},
+                {"type":"tote_bag","color":"cream","style":"woven leather oversized"},
+                {"type":"necklace","color":"gold","style":"layered"},
+                {"type":"sunglasses","color":"cream","style":"oversized"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_074",
+              "style":"minimalist",
+              "occasion":"everyday",
+              "season":"spring",
+              "budget":"150-400",
+              "skin_tone":"light",
+              "items":[
+                {"type":"shirt","color":"white","style":"oversized linen button_up"},
+                {"type":"pants","color":"olive_green","style":"ultra_high_waisted pleated wide_leg"},
+                {"type":"necklace","color":"gold","style":"chunky_chain"},
+                {"type":"clutch_bag","color":"beige","style":"textured"}
+              ]
+            },
+
+            {
+              "outfit_id":"outfit_075",
+              "style":"elegant",
+              "occasion":"everyday",
+              "season":"fall",
+              "budget":"200-500",
+              "skin_tone":"light",
+              "items":[
+                {"type":"dress","color":"taupe","style":"ribbed sweater oversized balloon_sleeve"},
+                {"type":"boots","color":"taupe","style":"knee_high leather"},
+                {"type":"handbag","color":"beige","style":"structured"},
+                {"type":"sunglasses","color":"black","style":"cat_eye oversized"},
+                {"type":"earrings","color":"gold","style":"delicate"}
+              ]
+            },
+            
+              {
+                "outfit_id":"outfit_076",
+                "style":"streetwear",
+                "occasion":"everyday",
+                "season":"fall",
+                "budget":"150-400",
+                "skin_tone":"light",
+                "items":[
+                  {"type":"sweater","color":"emerald_green","style":"oversized turtleneck"},
+                  {"type":"skirt","color":"black","style":"pleated midi flowing"},
+                  {"type":"boots","color":"black","style":"pointed ankle"},
+                  {"type":"crossbody_bag","color":"black","style":"quilted chain"},
+                  {"type":"sunglasses","color":"black","style":"oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_077",
+                "style":"streetwear",
+                "occasion":"party",
+                "season":"summer",
+                "budget":"300-600",
+                "skin_tone":"light",
+                "items":[
+                  {"type":"top","color":"icy_blue","style":"fitted asymmetrical"},
+                  {"type":"pants","color":"pearl_grey","style":"oversized satin cargo"},
+                  {"type":"sneakers","color":"metallic","style":"statement"},
+                  {"type":"handbag","color":"silver","style":"crystal mini"},
+                  {"type":"necklace","color":"silver","style":"layered chain"},
+                  {"type":"sunglasses","color":"grey","style":"tinted"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_078",
+                "style":"chic",
+                "occasion":"work",
+                "season":"winter",
+                "budget":"600-1000",
+                "skin_tone":"deep",
+                "items":[
+                  {"type":"dress","color":"charcoal","style":"sculpted blazer exaggerated_shoulders"},
+                  {"type":"boots","color":"black","style":"knee_high leather"},
+                  {"type":"handbag","color":"black","style":"structured geometric"},
+                  {"type":"earrings","color":"gold","style":"bold"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_079",
+                "style":"casual",
+                "occasion":"travel",
+                "season":"summer",
+                "budget":"300-600",
+                "skin_tone":"medium",
+                "items":[
+                  {"type":"vest","color":"sand","style":"oversized sleeveless utility"},
+                  {"type":"dress","color":"beige","style":"ribbed fitted side_slit"},
+                  {"type":"sandals","color":"brown","style":"gladiator leather"},
+                  {"type":"tote_bag","color":"brown","style":"oversized suede"},
+                  {"type":"earrings","color":"gold","style":"chunky"},
+                  {"type":"sunglasses","color":"brown","style":"aviator"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_080",
+                "style":"streetwear",
+                "occasion":"party",
+                "season":"fall",
+                "budget":"300-600",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"jacket","color":"cherry_red","style":"oversized leather"},
+                  {"type":"bodysuit","color":"black","style":"fitted biker"},
+                  {"type":"jeans","color":"washed_charcoal","style":"relaxed"},
+                  {"type":"boots","color":"black","style":"chunky"},
+                  {"type":"belt","color":"silver","style":"chain"},
+                  {"type":"shoulder_bag","color":"black","style":"micro"},
+                  {"type":"sunglasses","color":"black","style":"futuristic"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_081",
+                "style":"chic",
+                "occasion":"date",
+                "season":"spring",
+                "budget":"300-600",
+                "skin_tone":"tan",
+                "items":[
+                  {"type":"cardigan","color":"blush","style":"fitted wrap"},
+                  {"type":"pants","color":"pearl_pink","style":"wide_leg satin flowing"},
+                  {"type":"flats","color":"blush","style":"ballet satin"},
+                  {"type":"handbag","color":"cream","style":"structured mini"},
+                  {"type":"necklace","color":"pearl","style":"layered"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_082",
+                "style":"casual",
+                "occasion":"travel",
+                "season":"summer",
+                "budget":"300-600",
+                "skin_tone":"deep",
+                "items":[
+                  {"type":"sweater","color":"ivory","style":"oversized open_knit"},
+                  {"type":"crop_top","color":"white","style":"bandeau fitted"},
+                  {"type":"pants","color":"beige","style":"flowing linen"},
+                  {"type":"sandals","color":"brown","style":"leather"},
+                  {"type":"earrings","color":"shell","style":"minimal"},
+                  {"type":"tote_bag","color":"beige","style":"raffia oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_083",
+                "style":"vintage",
+                "occasion":"everyday",
+                "season":"fall",
+                "budget":"200-600",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"coat","color":"brown","style":"oversized plaid wool"},
+                  {"type":"sweater","color":"cream","style":"chunky ribbed turtleneck"},
+                  {"type":"jeans","color":"blue","style":"relaxed straight_leg cuffed"},
+                  {"type":"belt","color":"brown","style":"ornate"},
+                  {"type":"shoulder_bag","color":"tan","style":"leather"},
+                  {"type":"sunglasses","color":"black","style":"round oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_084",
+                "style":"minimalist",
+                "occasion":"work",
+                "season":"spring",
+                "budget":"150-350",
+                "skin_tone":"olive",
+                "items":[
+                  {"type":"tshirt","color":"white","style":"crew_neck relaxed"},
+                  {"type":"pants","color":"beige","style":"wide_leg pleated high_waisted"},
+                  {"type":"belt","color":"black","style":"slim leather"},
+                  {"type":"tote_bag","color":"black","style":"structured"},
+                  {"type":"flats","color":"black","style":"ballet leather"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_085",
+                "style":"romantic",
+                "occasion":"formal",
+                "season":"spring",
+                "budget":"250-700",
+                "skin_tone":"light_medium",
+                "items":[
+                  {"type":"dress","color":"blush_pink","style":"floral chiffon high_low midi ruffle"},
+                  {"type":"heels","color":"nude","style":"ankle_strap"},
+                  {"type":"earrings","color":"gold","style":"statement"},
+                  {"type":"clutch_bag","color":"blush","style":"minimal"}
+                ]
+              },
+            
+            
+              {
+                "outfit_id":"outfit_086",
+                "style":"romantic",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"150-450",
+                "skin_tone":"light",
+                "items":[
+                  {"type":"top","color":"pastel_yellow","style":"sleeveless knit"},
+                  {"type":"skirt","color":"white","style":"midi voluminous lemon_print"},
+                  {"type":"sandals","color":"yellow","style":"ankle_strap"},
+                  {"type":"tote_bag","color":"beige","style":"woven straw floral"},
+                  {"type":"sunglasses","color":"brown","style":"tortoiseshell"},
+                  {"type":"earrings","color":"gold","style":"delicate"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_087",
+                "style":"classic",
+                "occasion":"work",
+                "season":"fall",
+                "budget":"250-700",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"jacket","color":"caramel","style":"cropped leather moto"},
+                  {"type":"shirt","color":"blue","style":"striped button_up"},
+                  {"type":"pants","color":"navy","style":"relaxed tapered cuffed"},
+                  {"type":"belt","color":"brown","style":"leather"},
+                  {"type":"heels","color":"brown","style":"strappy"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_088",
+                "style":"minimalist",
+                "occasion":"evening",
+                "season":"fall",
+                "budget":"300-800",
+                "skin_tone":"deep",
+                "items":[
+                  {"type":"sweater","color":"chocolate_brown","style":"oversized ribbed balloon_sleeve"},
+                  {"type":"skirt","color":"brown","style":"asymmetrical leather midi"},
+                  {"type":"boots","color":"brown","style":"ankle leather"},
+                  {"type":"handbag","color":"black","style":"structured chain"},
+                  {"type":"earrings","color":"silver","style":"statement"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_089",
+                "style":"casual",
+                "occasion":"everyday",
+                "season":"spring",
+                "budget":"100-300",
+                "skin_tone":"olive",
+                "items":[
+                  {"type":"tshirt","color":"chocolate_brown","style":"cropped fitted"},
+                  {"type":"pants","color":"cream","style":"wide_leg pleated high_waisted"},
+                  {"type":"sneakers","color":"white","style":"minimal"},
+                  {"type":"blazer","color":"beige","style":"oversized"},
+                  {"type":"crossbody_bag","color":"brown","style":"leather"},
+                  {"type":"necklace","color":"gold","style":"layered"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_090",
+                "style":"smart_casual",
+                "occasion":"everyday",
+                "season":"spring",
+                "budget":"120-350",
+                "skin_tone":"medium_tan",
+                "items":[
+                  {"type":"blazer","color":"camel","style":"oversized"},
+                  {"type":"tshirt","color":"white","style":"crew_neck classic"},
+                  {"type":"jeans","color":"light_blue","style":"straight_leg cuffed"},
+                  {"type":"sneakers","color":"white","style":"retro striped"},
+                  {"type":"crossbody_bag","color":"beige","style":"round leather"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_091",
+                "style":"casual",
+                "occasion":"everyday",
+                "season":"fall",
+                "budget":"80-250",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"sweater","color":"cream","style":"oversized striped knit"},
+                  {"type":"pants","color":"beige","style":"relaxed cuffed"},
+                  {"type":"belt","color":"brown","style":"leather"},
+                  {"type":"sneakers","color":"beige","style":"canvas"},
+                  {"type":"tote_bag","color":"taupe","style":"suede"},
+                  {"type":"earrings","color":"gold","style":"delicate"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_092",
+                "style":"romantic",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"180-600",
+                "skin_tone":"olive",
+                "items":[
+                  {"type":"dress","color":"lilac_pink","style":"floral wrap maxi ruffle flutter_sleeve"},
+                  {"type":"sandals","color":"metallic","style":"flat"},
+                  {"type":"clutch_bag","color":"cream","style":"woven"},
+                  {"type":"earrings","color":"gold","style":"minimal"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_093",
+                "style":"resort",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"150-500",
+                "skin_tone":"warm_tan",
+                "items":[
+                  {"type":"crop_top","color":"aqua_blue","style":"linen asymmetrical button_front"},
+                  {"type":"skirt","color":"aqua_blue","style":"flowing maxi"},
+                  {"type":"sandals","color":"nude","style":"flat"},
+                  {"type":"clutch_bag","color":"beige","style":"woven envelope"},
+                  {"type":"sunglasses","color":"gradient","style":"oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_094",
+                "style":"vacation_glam",
+                "occasion":"dinner",
+                "season":"summer",
+                "budget":"80-220",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"dress","color":"blue_white","style":"tropical_leaf cutout maxi halter"},
+                  {"type":"sandals","color":"silver","style":"strappy"},
+                  {"type":"shoulder_bag","color":"metallic","style":"minimal"},
+                  {"type":"earrings","color":"crystal","style":"delicate"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_095",
+                "style":"playful",
+                "occasion":"everyday",
+                "season":"summer",
+                "budget":"50-180",
+                "skin_tone":"light",
+                "items":[
+                  {"type":"tank_top","color":"white","style":"ribbed fitted"},
+                  {"type":"skirt","color":"blue","style":"floral tiered mini"},
+                  {"type":"sneakers","color":"white","style":"canvas low_top"},
+                  {"type":"crossbody_bag","color":"coral","style":"mini tote"},
+                  {"type":"sunglasses","color":"white","style":"retro"}
+                ]
+              },
+            
+            
+              {
+                "outfit_id":"outfit_096",
+                "style":"quiet_luxury",
+                "occasion":"everyday",
+                "season":"fall",
+                "budget":"120-350",
+                "skin_tone":"deep_tan",
+                "items":[
+                  {"type":"sweater","color":"beige","style":"oversized knit"},
+                  {"type":"tshirt","color":"white","style":"crew_neck"},
+                  {"type":"pants","color":"dark_chocolate","style":"wide_leg tailored"},
+                  {"type":"crossbody_bag","color":"taupe","style":"designer structured"},
+                  {"type":"sneakers","color":"neutral","style":"chunky"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_097",
+                "style":"streetwear",
+                "occasion":"casual",
+                "season":"spring",
+                "budget":"80-250",
+                "skin_tone":"olive",
+                "items":[
+                  {"type":"jacket","color":"olive","style":"oversized cropped utility"},
+                  {"type":"tank_top","color":"black","style":"fitted"},
+                  {"type":"shirt","color":"blue","style":"striped button_up"},
+                  {"type":"jeans","color":"vintage_blue","style":"relaxed cuffed"},
+                  {"type":"sneakers","color":"silver","style":"chunky running"},
+                  {"type":"cap","color":"brown","style":"baseball"},
+                  {"type":"tote_bag","color":"black","style":"woven"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_098",
+                "style":"playful",
+                "occasion":"casual",
+                "season":"summer",
+                "budget":"40-150",
+                "skin_tone":"dark",
+                "items":[
+                  {"type":"crop_top","color":"orange","style":"smocked strapless ruffle"},
+                  {"type":"shorts","color":"light_blue","style":"denim"},
+                  {"type":"sneakers","color":"white","style":"platform"},
+                  {"type":"backpack","color":"black","style":"mini"},
+                  {"type":"sunglasses","color":"black","style":"oversized square"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_099",
+                "style":"romantic_casual",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"90-260",
+                "skin_tone":"warm_olive",
+                "items":[
+                  {"type":"tank_top","color":"coral","style":"ribbed fitted"},
+                  {"type":"skirt","color":"white","style":"lace tiered mini"},
+                  {"type":"sneakers","color":"white","style":"low_top"},
+                  {"type":"crossbody_bag","color":"cream","style":"structured"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_100",
+                "style":"romantic",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"180-650",
+                "skin_tone":"light_medium",
+                "items":[
+                  {"type":"dress","color":"lilac","style":"floral ruffle maxi asymmetrical flutter_sleeve"},
+                  {"type":"sandals","color":"metallic","style":"flat"},
+                  {"type":"clutch_bag","color":"cream","style":"woven"},
+                  {"type":"earrings","color":"gold","style":"delicate"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_101",
+                "style":"coastal_casual",
+                "occasion":"weekend",
+                "season":"summer",
+                "budget":"120-320",
+                "skin_tone":"fair",
+                "items":[
+                  {"type":"jumpsuit","color":"navy","style":"linen sleeveless tie_waist"},
+                  {"type":"sandals","color":"white","style":"leather slide"},
+                  {"type":"crossbody_bag","color":"white","style":"structured chain"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_102",
+                "style":"minimal_feminine",
+                "occasion":"brunch",
+                "season":"summer",
+                "budget":"90-280",
+                "skin_tone":"deep_brown",
+                "items":[
+                  {"type":"dress","color":"dusty_rose","style":"midi sleeveless a_line"},
+                  {"type":"sandals","color":"gold","style":"embellished flat"},
+                  {"type":"shoulder_bag","color":"ivory","style":"quilted chain"},
+                  {"type":"sunglasses","color":"gradient","style":"oversized"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_103",
+                "style":"european_chic",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"140-450",
+                "skin_tone":"medium_tan",
+                "items":[
+                  {"type":"shirt","color":"white","style":"oversized button_up"},
+                  {"type":"shorts","color":"beige","style":"pleated linen tailored"},
+                  {"type":"loafers","color":"brown","style":"leather"},
+                  {"type":"scarf","color":"multicolor","style":"silk neck"},
+                  {"type":"crossbody_bag","color":"cognac","style":"structured"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_104",
+                "style":"resort_casual",
+                "occasion":"weekend",
+                "season":"summer",
+                "budget":"60-220",
+                "skin_tone":"deep_brown",
+                "items":[
+                  {"type":"shirt","color":"blush_pink","style":"oversized lightweight"},
+                  {"type":"tank_top","color":"white","style":"cropped"},
+                  {"type":"shorts","color":"light_blue","style":"distressed denim"},
+                  {"type":"sandals","color":"gold","style":"slide"},
+                  {"type":"earrings","color":"gold","style":"hoops"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_105",
+                "style":"alternative_grunge",
+                "occasion":"festival",
+                "season":"summer",
+                "budget":"70-240",
+                "skin_tone":"light_olive",
+                "items":[
+                  {"type":"shirt","color":"multicolor","style":"retro geometric short_sleeve oversized"},
+                  {"type":"crop_top","color":"black","style":"bandeau"},
+                  {"type":"shorts","color":"black","style":"distressed denim mini"},
+                  {"type":"boots","color":"black","style":"combat"},
+                  {"type":"earrings","color":"silver","style":"hoops"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_106",
+                "style":"romantic_streetwear",
+                "occasion":"casual",
+                "season":"spring",
+                "budget":"80-260",
+                "skin_tone":"warm_beige",
+                "items":[
+                  {"type":"tshirt","color":"black","style":"graphic band"},
+                  {"type":"skirt","color":"pink","style":"floral midi front_slit"},
+                  {"type":"sneakers","color":"white","style":"high_top canvas"},
+                  {"type":"crossbody_bag","color":"black","style":"minimal"},
+                  {"type":"sunglasses","color":"black","style":"minimal"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_107",
+                "style":"romantic_casual",
+                "occasion":"vacation",
+                "season":"summer",
+                "budget":"90-240",
+                "skin_tone":"medium_tan",
+                "items":[
+                  {"type":"tank_top","color":"coral","style":"ribbed fitted"},
+                  {"type":"skirt","color":"white","style":"lace layered mini"},
+                  {"type":"sneakers","color":"white","style":"low_top"},
+                  {"type":"crossbody_bag","color":"cream","style":"structured chain"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_108",
+                "style":"sporty_chic",
+                "occasion":"casual",
+                "season":"spring",
+                "budget":"100-320",
+                "skin_tone":"caramel",
+                "items":[
+                  {"type":"dress","color":"light_blue","style":"denim midi sleeveless button_front"},
+                  {"type":"cap","color":"red","style":"baseball"},
+                  {"type":"sneakers","color":"red","style":"retro"},
+                  {"type":"handbag","color":"white","style":"mini structured"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_109",
+                "style":"dark_romantic",
+                "occasion":"streetwear",
+                "season":"fall",
+                "budget":"110-340",
+                "skin_tone":"pale",
+                "items":[
+                  {"type":"sweatshirt","color":"black","style":"oversized"},
+                  {"type":"skirt","color":"black_white","style":"floral maxi thigh_slit"},
+                  {"type":"boots","color":"black","style":"combat"},
+                  {"type":"handbag","color":"black","style":"structured"},
+                  {"type":"sunglasses","color":"black","style":"round vintage"}
+                ]
+              },
+
+              {
+                "outfit_id":"outfit_110",
+                "style":"playful_streetwear",
+                "occasion":"casual_weekend",
+                "season":"summer",
+                "budget":"70-230",
+                "skin_tone":"light_olive",
+                "items":[
+                  {"type":"overalls","color":"leopard","style":"denim print"},
+                  {"type":"tshirt","color":"white","style":"fitted classic"},
+                  {"type":"sneakers","color":"black","style":"skate old_school"},
+                  {"type":"sunglasses","color":"black","style":"round"},
+                  {"type":"crossbody_bag","color":"black","style":"small"},
+                  {"type":"headscarf","color":"pink_orange","style":"patterned"}
+                ]
+              }
+    
+    ]
+    

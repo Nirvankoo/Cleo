@@ -70,12 +70,12 @@ struct HomeView: View {
                             Text("$\(Int(budget))")
                         }
                         
-                        Slider(value: $budget, in: 50...300)
+                        Slider(value: $budget, in: 100...1000,step: 50)
                         
                         HStack {
-                            Text("$50")
+                            Text("$100")
                             Spacer()
-                            Text("$300")
+                            Text("$1000")
                         }
                     }
                     .padding(16)
@@ -199,10 +199,10 @@ extension HomeView {
     
     private func buildPreferences() -> OutfitPreferences {
         OutfitPreferences(
-            persona: selectedPersona,
-            occasion: selectedOccasion,
-            season: selectedSeason,
-            skinTone: selectedSkinTone,
+            persona: selectedPersona.lowercased(),
+                occasion: selectedOccasion.lowercased(),
+                season: selectedSeason.lowercased(),
+                skinTone: selectedSkinTone.lowercased(),
             budget: budget
         )
     }

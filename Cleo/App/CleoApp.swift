@@ -6,6 +6,7 @@ struct YourAppName: App {
     
     @StateObject private var appVM = AppViewModel()
     @StateObject private var authManager = AuthManager()
+    @StateObject private var savedOutfitManager = SavedOutfitManager()
 
     init() {
         FirebaseApp.configure()
@@ -17,6 +18,10 @@ struct YourAppName: App {
                 RootView()
                     .environmentObject(appVM)
                     .environmentObject(authManager)
+                    .environmentObject(savedOutfitManager)
+                    .onAppear {
+                        savedOutfitManager.loadSavedOutfits()
+                    }
                 
                 SplashLayer()
             }
