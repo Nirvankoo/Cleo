@@ -112,12 +112,18 @@ struct OutfitView: View {
 
                         // MARK: - ITEMS LIST
                         VStack(spacing: 10) {
+                            let primaryStore =
+                                engine.getPrimaryStore(
+                                    for: outfit,
+                                    userBudget: preferences.budget
+                                )
                             ForEach(outfit.items, id: \.type) { item in
 
                                 let store = engine.getStoreForItem(
                                     item,
                                     style: outfit.style,
-                                    userBudget: preferences.budget
+                                    userBudget: preferences.budget,
+                                    primaryStore: primaryStore
                                 )
 
                                 HStack(spacing: 16) {
@@ -223,7 +229,7 @@ extension OutfitView {
                 searchStyle = "fitted"
 
             case "oversized":
-                searchStyle = "relaxed"
+                searchStyle = "oversized"
 
             case "wide_leg":
                 searchStyle = "wide leg"

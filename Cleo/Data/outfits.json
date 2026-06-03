@@ -5,7 +5,7 @@
         "style":"chic",
         "occasion":"work",
         "season":"fall",
-        "budget":"300-600",
+        "budget":"350-700",
         "skin_tone":"tan",
         "items":[
           {"type":"blazer","color":"camel","style":"oversized wool"},
@@ -13,7 +13,7 @@
           {"type":"pants","color":"black","style":"ankle"},
           {"type":"loafers","color":"dark_brown","style":"polished leather"},
           {"type":"tote_bag","color":"taupe","style":"structured"},
-          {"type":"earrings","color":"gold","style":"minimal"}
+          {"type":"earrings","color":"gold","style":"small"}
         ]
       },
       {
@@ -21,11 +21,11 @@
         "style":"streetwear",
         "occasion":"party",
         "season":"fall",
-        "budget":"600-1000",
+        "budget":"600-1500",
         "skin_tone":"deep",
         "items":[
           {"type":"jacket","color":"black","style":"oversized leather"},
-          {"type":"crop_top","color":"black","style":"monogram bandeau"},
+          {"type":"crop_top","color":"black","style":"bandeau"},
           {"type":"skirt","color":"black","style":"leather mini"},
           {"type":"boots","color":"black","style":"knee_high leather"},
           {"type":"shoulder_bag","color":"black","style":"quilted"},
@@ -38,14 +38,14 @@
         "style":"casual",
         "occasion":"everyday",
         "season":"spring",
-        "budget":"100-300",
+        "budget":"150-350",
         "skin_tone":"fair",
         "items":[
           {"type":"tshirt","color":"white","style":"fitted"},
           {"type":"pants","color":"beige","style":"wide_leg high_waisted"},
           {"type":"sneakers","color":"cream","style":"platform"},
           {"type":"crossbody_bag","color":"beige","style":"structured"},
-          {"type":"sunglasses","color":"black","style":"slim"}
+          {"type":"sunglasses","color":"black","style":"ray-ban"}
         ]
       },
     
@@ -54,7 +54,7 @@
         "style":"streetwear",
         "occasion":"party",
         "season":"fall",
-        "budget":"300-600",
+        "budget":"350-700",
         "skin_tone":"tan",
         "items":[
           {"type":"jacket","color":"black","style":"cropped leather biker"},
@@ -71,10 +71,10 @@
         "style":"chic",
         "occasion":"everyday",
         "season":"fall",
-        "budget":"300-600",
+        "budget":"350-700",
         "skin_tone":"medium",
         "items":[
-          {"type":"sweater","color":"beige","style":"lightweight knit"},
+          {"type":"sweater","color":"beige","style":"knit"},
           {"type":"pants","color":"ivory","style":"tailored ankle"},
           {"type":"loafers","color":"camel","style":"leather"},
           {"type":"handbag","color":"taupe","style":"structured"},
@@ -87,7 +87,7 @@
         "style":"casual",
         "occasion":"everyday",
         "season":"spring",
-        "budget":"100-300",
+        "budget":"150-350",
         "skin_tone":"medium",
         "items":[
           {"type":"sweater","color":"lavender","style":"oversized knit"},
@@ -118,13 +118,13 @@
         "style":"chic",
         "occasion":"work",
         "season":"fall",
-        "budget":"600-1000",
+        "budget":"700-1500",
         "skin_tone":"deep",
         "items":[
           {"type":"blouse","color":"chocolate_brown","style":"satin button_up"},
           {"type":"pants","color":"chocolate_brown","style":"tailored straight_leg"},
           {"type":"heels","color":"brown","style":"pointed leather"},
-          {"type":"handbag","color":"dark_brown","style":"structured"},
+          {"type":"handbag","color":"brown","style":"structured"},
           {"type":"earrings","color":"gold","style":"elegant"}
         ]
       },
@@ -133,8 +133,8 @@
         "outfit_id":"outfit_009",
         "style":"casual",
         "occasion":"travel",
-        "season":"summer",
-        "budget":"100-300",
+        "season":"spring",
+        "budget":"500-750",
         "skin_tone":"fair",
         "items":[
           {"type":"blazer","color":"black","style":"structured tailored"},
@@ -151,7 +151,7 @@
         "style":"chic",
         "occasion":"work",
         "season":"fall",
-        "budget":"600-1000",
+        "budget":"700-1500",
         "skin_tone":"medium",
         "items":[
           {"type":"blazer","color":"black","style":"structured"},
@@ -168,7 +168,7 @@
         "style":"chic",
         "occasion":"date",
         "season":"spring",
-        "budget":"300-600",
+        "budget":"350-700",
         "skin_tone":"light",
         "items":[
           {"type":"dress","color":"soft_pink","style":"satin"},
@@ -183,7 +183,7 @@
         "style":"streetwear",
         "occasion":"everyday",
         "season":"fall",
-        "budget":"100-300",
+        "budget":"150-350",
         "skin_tone":"tan",
         "items":[
           {"type":"hoodie","color":"olive","style":"oversized"},
@@ -199,7 +199,7 @@
         "style":"chic",
         "occasion":"party",
         "season":"summer",
-        "budget":"600-1000",
+        "budget":"700-1500",
         "skin_tone":"dark",
         "items":[
           {"type":"dress","color":"black","style":"satin fitted"},
@@ -214,7 +214,7 @@
         "style":"sport",
         "occasion":"everyday",
         "season":"summer",
-        "budget":"100-300",
+        "budget":"150-350",
         "skin_tone":"fair",
         "items":[
           {"type":"jacket","color":"grey","style":"cropped zip"},
@@ -229,7 +229,7 @@
           "style":"chic",
           "occasion":"work",
           "season":"winter",
-          "budget":"600-1000",
+          "budget":"700-1500",
           "skin_tone":"light",
           "items":[
             {"type":"coat","color":"ivory","style":"oversized wool wrap"},
@@ -246,7 +246,7 @@
           "style":"chic",
           "occasion":"party",
           "season":"summer",
-          "budget":"300-600",
+          "budget":"350-700",
           "skin_tone":"medium",
           "items":[
             {"type":"dress","color":"deep_red","style":"satin slip asymmetrical"},
@@ -261,7 +261,7 @@
           "style":"casual",
           "occasion":"everyday",
           "season":"spring",
-          "budget":"100-300",
+          "budget":"150-350",
           "skin_tone":"fair",
           "items":[
             {"type":"cardigan","color":"sage_green","style":"oversized"},
@@ -278,7 +278,7 @@
           "style":"chic",
           "occasion":"travel",
           "season":"fall",
-          "budget":"600-1000",
+          "budget":"700-1500",
           "skin_tone":"tan",
           "items":[
             {"type":"coat","color":"beige","style":"oversized trench"},
@@ -296,7 +296,7 @@
           "style":"streetwear",
           "occasion":"party",
           "season":"fall",
-          "budget":"300-600",
+          "budget":"350-700",
           "skin_tone":"deep",
           "items":[
             {"type":"hoodie","color":"washed_black","style":"oversized"},
@@ -313,7 +313,7 @@
           "style":"chic",
           "occasion":"work",
           "season":"spring",
-          "budget":"300-600",
+          "budget":"350-700",
           "skin_tone":"medium",
           "items":[
             {"type":"blazer","color":"powder_blue","style":"oversized"},
@@ -330,7 +330,7 @@
           "style":"streetwear",
           "occasion":"party",
           "season":"fall",
-          "budget":"600-1000",
+          "budget":"700-1500",
           "skin_tone":"light",
           "items":[
             {"type":"jacket","color":"black","style":"oversized leather bomber"},
@@ -347,7 +347,7 @@
           "style":"casual",
           "occasion":"everyday",
           "season":"summer",
-          "budget":"100-300",
+          "budget":"150-350",
           "skin_tone":"tan",
           "items":[
             {"type":"shirt","color":"butter_yellow","style":"linen"},
@@ -363,7 +363,7 @@
           "style":"casual",
           "occasion":"everyday",
           "season":"winter",
-          "budget":"100-300",
+          "budget":"150-350",
           "skin_tone":"fair",
           "items":[
             {"type":"sweater","color":"oatmeal","style":"oversized knit"},
@@ -380,7 +380,7 @@
           "style":"chic",
           "occasion":"party",
           "season":"summer",
-          "budget":"600-1000",
+          "budget":"700-1500",
           "skin_tone":"deep",
           "items":[
             {"type":"dress","color":"emerald_green","style":"satin draped open_back"},
@@ -395,7 +395,7 @@
           "style":"chic",
           "occasion":"travel",
           "season":"fall",
-          "budget":"300-600",
+          "budget":"350-700",
           "skin_tone":"medium",
           "items":[
             {"type":"coat","color":"charcoal","style":"oversized wool"},
@@ -411,7 +411,7 @@
             "style":"streetwear",
             "occasion":"everyday",
             "season":"spring",
-            "budget":"100-300",
+            "budget":"150-350",
             "skin_tone":"light",
             "items":[
               {"type":"hoodie","color":"grey","style":"cropped zip"},
@@ -428,7 +428,7 @@
             "style":"chic",
             "occasion":"work",
             "season":"winter",
-            "budget":"600-1000",
+            "budget":"700-1500",
             "skin_tone":"deep",
             "items":[
               {"type":"coat","color":"black","style":"oversized wool"},
@@ -445,7 +445,7 @@
             "style":"chic",
             "occasion":"everyday",
             "season":"spring",
-            "budget":"300-600",
+            "budget":"350-700",
             "skin_tone":"light",
             "items":[
               {"type":"shirt","color":"blue","style":"oversized striped cotton"},
@@ -463,7 +463,7 @@
             "style":"chic",
             "occasion":"work",
             "season":"fall",
-            "budget":"600-1000",
+            "budget":"700-1500",
             "skin_tone":"medium",
             "items":[
               {"type":"blazer","color":"warm_grey","style":"oversized belted"},
@@ -480,7 +480,7 @@
             "style":"chic",
             "occasion":"date",
             "season":"summer",
-            "budget":"300-600",
+            "budget":"350-700",
             "skin_tone":"tan",
             "items":[
               {"type":"blouse","color":"pale_blue","style":"oversized linen"},
@@ -498,7 +498,7 @@
             "style":"chic",
             "occasion":"work",
             "season":"fall",
-            "budget":"300-600",
+            "budget":"350-700",
             "skin_tone":"medium",
             "items":[
               {"type":"blazer","color":"espresso","style":"oversized"},
@@ -516,7 +516,7 @@
             "style":"chic",
             "occasion":"date",
             "season":"summer",
-            "budget":"300-600",
+            "budget":"350-700",
             "skin_tone":"tan",
             "items":[
               {"type":"dress","color":"butter_cream","style":"sleeveless maxi draped"},
@@ -532,7 +532,7 @@
             "style":"casual",
             "occasion":"everyday",
             "season":"spring",
-            "budget":"100-300",
+            "budget":"150-350",
             "skin_tone":"light",
             "items":[
               {"type":"shirt","color":"white","style":"oversized linen"},
@@ -549,7 +549,7 @@
             "style":"chic",
             "occasion":"work",
             "season":"spring",
-            "budget":"600-1000",
+            "budget":"700-1500",
             "skin_tone":"deep",
             "items":[
               {"type":"blazer","color":"stone_beige","style":"oversized sculpted"},
@@ -566,7 +566,7 @@
             "style":"streetwear",
             "occasion":"everyday",
             "season":"fall",
-            "budget":"100-300",
+            "budget":"150-350",
             "skin_tone":"medium",
             "items":[
               {"type":"jacket","color":"washed_taupe","style":"oversized bomber"},
@@ -584,7 +584,7 @@
               "style":"chic",
               "occasion":"party",
               "season":"summer",
-              "budget":"600-1000",
+              "budget":"700-1500",
               "skin_tone":"fair",
               "items":[
                 {"type":"dress","color":"blush","style":"satin draped midi asymmetrical"},
@@ -599,7 +599,7 @@
               "style":"casual",
               "occasion":"travel",
               "season":"fall",
-              "budget":"100-300",
+              "budget":"150-350",
               "skin_tone":"tan",
               "items":[
                 {"type":"coat","color":"oatmeal","style":"oversized trench"},
@@ -617,7 +617,7 @@
               "style":"chic",
               "occasion":"party",
               "season":"fall",
-              "budget":"600-1000",
+              "budget":"700-1500",
               "skin_tone":"deep",
               "items":[
                 {"type":"jumpsuit","color":"chocolate","style":"satin tailored wide_leg"},
@@ -632,7 +632,7 @@
               "style":"sport",
               "occasion":"everyday",
               "season":"spring",
-              "budget":"100-300",
+              "budget":"150-350",
               "skin_tone":"light",
               "items":[
                 {"type":"top","color":"cream","style":"fitted knit polo"},
@@ -649,7 +649,7 @@
               "style":"chic",
               "occasion":"work",
               "season":"winter",
-              "budget":"600-1000",
+              "budget":"700-1500",
               "skin_tone":"medium",
               "items":[
                 {"type":"coat","color":"ivory","style":"oversized wool"},
@@ -666,7 +666,7 @@
               "style":"casual",
               "occasion":"travel",
               "season":"summer",
-              "budget":"100-300",
+              "budget":"150-350",
               "skin_tone":"tan",
               "items":[
                 {"type":"shirt","color":"white","style":"oversized linen"},
@@ -683,7 +683,7 @@
               "style":"chic",
               "occasion":"party",
               "season":"winter",
-              "budget":"600-1000",
+              "budget":"700-1500",
               "skin_tone":"deep",
               "items":[
                 {"type":"dress","color":"black","style":"asymmetrical sculptural gown"},
@@ -698,7 +698,7 @@
               "style":"chic",
               "occasion":"everyday",
               "season":"fall",
-              "budget":"300-600",
+              "budget":"350-700",
               "skin_tone":"medium",
               "items":[
                 {"type":"coat","color":"camel","style":"oversized herringbone wool"},
@@ -717,7 +717,7 @@
               "style":"chic",
               "occasion":"work",
               "season":"spring",
-              "budget":"300-600",
+              "budget":"350-700",
               "skin_tone":"fair",
               "items":[
                 {"type":"blazer","color":"mint","style":"oversized"},
@@ -735,7 +735,7 @@
               "style":"streetwear",
               "occasion":"everyday",
               "season":"fall",
-              "budget":"100-300",
+              "budget":"150-350",
               "skin_tone":"light",
               "items":[
                 {"type":"cardigan","color":"mocha","style":"oversized striped knit"},
@@ -768,7 +768,7 @@
                 "style":"elegant",
                 "occasion":"evening",
                 "season":"spring",
-                "budget":"200-600",
+                "budget":"350-700",
                 "skin_tone":"light",
                 "items":[
                   {"type":"camisole","color":"champagne","style":"satin cowl_neck"},
@@ -784,7 +784,7 @@
                 "style":"minimalist",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"100-350",
+                "budget":"150-350",
                 "skin_tone":"light",
                 "items":[
                   {"type":"shirt","color":"white","style":"linen button_up relaxed"},
@@ -800,7 +800,7 @@
                 "style":"streetwear",
                 "occasion":"everyday",
                 "season":"fall",
-                "budget":"100-300",
+                "budget":"150-350",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"hoodie","color":"cream","style":"oversized"},
@@ -818,7 +818,7 @@
                 "style":"casual",
                 "occasion":"everyday",
                 "season":"spring",
-                "budget":"100-300",
+                "budget":"150-350",
                 "skin_tone":"medium",
                 "items":[
                   {"type":"shirt","color":"white","style":"oversized structured"},
@@ -835,7 +835,7 @@
                 "style":"sport",
                 "occasion":"travel",
                 "season":"fall",
-                "budget":"100-300",
+                "budget":"150-350",
                 "skin_tone":"tan",
                 "items":[
                   {"type":"jacket","color":"mocha","style":"oversized bomber"},
@@ -853,7 +853,7 @@
                 "style":"streetwear",
                 "occasion":"everyday",
                 "season":"spring",
-                "budget":"100-300",
+                "budget":"150-350",
                 "skin_tone":"medium",
                 "items":[
                   {"type":"tshirt","color":"black","style":"cropped fitted"},
@@ -870,7 +870,7 @@
                 "style":"casual",
                 "occasion":"everyday",
                 "season":"winter",
-                "budget":"100-300",
+                "budget":"150-350",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"cardigan","color":"mocha","style":"oversized knit"},
@@ -887,7 +887,7 @@
                 "style":"streetwear",
                 "occasion":"everyday",
                 "season":"winter",
-                "budget":"300-600",
+                "budget":"350-700",
                 "skin_tone":"deep",
                 "items":[
                   {"type":"hoodie","color":"charcoal","style":"oversized"},
@@ -904,7 +904,7 @@
                 "style":"streetwear",
                 "occasion":"everyday",
                 "season":"fall",
-                "budget":"100-300",
+                "budget":"150-350",
                 "skin_tone":"tan",
                 "items":[
                   {"type":"jacket","color":"faded_blue","style":"oversized denim"},
@@ -921,7 +921,7 @@
             "style":"sport",
             "occasion":"everyday",
             "season":"summer",
-            "budget":"50-100",
+            "budget":"150-350",
             "skin_tone":"fair",
             "items":[
               {"type":"sweatshirt","color":"pale_blue","style":"oversized"},
@@ -938,7 +938,7 @@
             "style":"chic",
             "occasion":"everyday",
             "season":"summer",
-            "budget":"100-300",
+            "budget":"150-350",
             "skin_tone":"fair",
             "items":[
               {"type":"tank_top","color":"butter_yellow","style":"ribbed fitted"},
@@ -954,7 +954,7 @@
             "style":"casual",
             "occasion":"travel",
             "season":"summer",
-            "budget":"100-300",
+            "budget":"150-350",
             "skin_tone":"medium",
             "items":[
               {"type":"shirt","color":"sky_blue","style":"oversized striped linen"},
@@ -972,7 +972,7 @@
             "style":"streetwear",
             "occasion":"everyday",
             "season":"summer",
-            "budget":"50-100",
+            "budget":"150-350",
             "skin_tone":"light",
             "items":[
               {"type":"top","color":"white","style":"fitted sleeveless"},
@@ -989,7 +989,7 @@
             "style":"casual",
             "occasion":"everyday",
             "season":"summer",
-            "budget":"100-300",
+            "budget":"150-350",
             "skin_tone":"fair",
             "items":[
               {"type":"shirt","color":"blush_pink","style":"oversized linen"},
@@ -1005,7 +1005,7 @@
             "style":"streetwear",
             "occasion":"travel",
             "season":"summer",
-            "budget":"50-100",
+            "budget":"150-350",
             "skin_tone":"tan",
             "items":[
               {"type":"shirt","color":"beige","style":"oversized graphic linen"},
@@ -1023,7 +1023,7 @@
             "style":"chic",
             "occasion":"date",
             "season":"summer",
-            "budget":"300-600",
+            "budget":"350-700",
             "skin_tone":"deep",
             "items":[
               {"type":"dress","color":"chocolate_brown","style":"sleeveless knit side_slit"},
@@ -1039,7 +1039,7 @@
             "style":"casual",
             "occasion":"everyday",
             "season":"summer",
-            "budget":"50-100",
+            "budget":"150-350",
             "skin_tone":"medium",
             "items":[
               {"type":"shirt","color":"white","style":"oversized crisp"},
@@ -1055,7 +1055,7 @@
             "style":"sport",
             "occasion":"everyday",
             "season":"summer",
-            "budget":"50-100",
+            "budget":"150-350",
             "skin_tone":"light",
             "items":[
               {"type":"sweatshirt","color":"cream","style":"oversized vintage graphic"},
@@ -1072,7 +1072,7 @@
             "style":"casual",
             "occasion":"everyday",
             "season":"summer",
-            "budget":"100-250",
+            "budget":"150-350",
             "skin_tone":"light",
             "items":[
               {"type":"tank_top","color":"sage_green","style":"ribbed"},
@@ -1091,7 +1091,7 @@
               "style":"elegant",
               "occasion":"work",
               "season":"spring",
-              "budget":"300-700",
+              "budget":"350-700",
               "skin_tone":"olive",
               "items":[
                 {"type":"shirt","color":"powder_blue","style":"oversized button_up"},
@@ -1109,7 +1109,7 @@
               "style":"bohemian",
               "occasion":"vacation",
               "season":"summer",
-              "budget":"200-600",
+              "budget":"350-700",
               "skin_tone":"light",
               "items":[
                 {"type":"dress","color":"white_blue","style":"floral maxi puff_sleeve slit wrap"},
@@ -1122,7 +1122,7 @@
               "style":"casual",
               "occasion":"everyday",
               "season":"summer",
-              "budget":"100-300",
+              "budget":"150-350",
               "skin_tone":"light",
               "items":[
                 {"type":"top","color":"chocolate_brown","style":"sleeveless mock_neck fitted"},
@@ -1138,7 +1138,7 @@
               "style":"streetwear",
               "occasion":"work",
               "season":"fall",
-              "budget":"200-500",
+              "budget":"350-700",
               "skin_tone":"light",
               "items":[
                 {"type":"blazer","color":"taupe","style":"oversized tailored"},
@@ -1156,7 +1156,7 @@
               "style":"streetwear",
               "occasion":"party",
               "season":"fall",
-              "budget":"600-1000",
+              "budget":"700-1500",
               "skin_tone":"deep",
               "items":[
                 {"type":"jacket","color":"silver","style":"oversized bomber metallic"},
@@ -1174,7 +1174,7 @@
               "style":"chic",
               "occasion":"date",
               "season":"spring",
-              "budget":"600-1000",
+              "budget":"700-1500",
               "skin_tone":"fair",
               "items":[
                 {"type":"blazer","color":"oat_beige","style":"oversized"},
@@ -1191,7 +1191,7 @@
               "style":"streetwear",
               "occasion":"everyday",
               "season":"fall",
-              "budget":"300-600",
+              "budget":"350-700",
               "skin_tone":"medium",
               "items":[
                 {"type":"coat","color":"espresso","style":"oversized utility trench"},
@@ -1209,7 +1209,7 @@
               "style":"chic",
               "occasion":"travel",
               "season":"summer",
-              "budget":"600-1000",
+              "budget":"700-1500",
               "skin_tone":"tan",
               "items":[
                 {"type":"shirt","color":"butter_cream","style":"silk oversized"},
@@ -1241,7 +1241,7 @@
               "style":"elegant",
               "occasion":"everyday",
               "season":"fall",
-              "budget":"200-500",
+              "budget":"350-700",
               "skin_tone":"light",
               "items":[
                 {"type":"dress","color":"taupe","style":"ribbed sweater oversized balloon_sleeve"},
@@ -1257,7 +1257,7 @@
                 "style":"streetwear",
                 "occasion":"everyday",
                 "season":"fall",
-                "budget":"150-400",
+                "budget":"350-700",
                 "skin_tone":"light",
                 "items":[
                   {"type":"sweater","color":"emerald_green","style":"oversized turtleneck"},
@@ -1273,7 +1273,7 @@
                 "style":"streetwear",
                 "occasion":"party",
                 "season":"summer",
-                "budget":"300-600",
+                "budget":"350-700",
                 "skin_tone":"light",
                 "items":[
                   {"type":"top","color":"icy_blue","style":"fitted asymmetrical"},
@@ -1290,7 +1290,7 @@
                 "style":"chic",
                 "occasion":"work",
                 "season":"winter",
-                "budget":"600-1000",
+                "budget":"700-1500",
                 "skin_tone":"deep",
                 "items":[
                   {"type":"dress","color":"charcoal","style":"sculpted blazer exaggerated_shoulders"},
@@ -1305,7 +1305,7 @@
                 "style":"casual",
                 "occasion":"travel",
                 "season":"summer",
-                "budget":"300-600",
+                "budget":"350-700",
                 "skin_tone":"medium",
                 "items":[
                   {"type":"vest","color":"sand","style":"oversized sleeveless utility"},
@@ -1322,7 +1322,7 @@
                 "style":"streetwear",
                 "occasion":"party",
                 "season":"fall",
-                "budget":"300-600",
+                "budget":"350-700",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"jacket","color":"cherry_red","style":"oversized leather"},
@@ -1340,7 +1340,7 @@
                 "style":"chic",
                 "occasion":"date",
                 "season":"spring",
-                "budget":"300-600",
+                "budget":"350-700",
                 "skin_tone":"tan",
                 "items":[
                   {"type":"cardigan","color":"blush","style":"fitted wrap"},
@@ -1356,7 +1356,7 @@
                 "style":"casual",
                 "occasion":"travel",
                 "season":"summer",
-                "budget":"300-600",
+                "budget":"350-700",
                 "skin_tone":"deep",
                 "items":[
                   {"type":"sweater","color":"ivory","style":"oversized open_knit"},
@@ -1373,7 +1373,7 @@
                 "style":"vintage",
                 "occasion":"everyday",
                 "season":"fall",
-                "budget":"200-600",
+                "budget":"350-700",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"coat","color":"brown","style":"oversized plaid wool"},
@@ -1406,7 +1406,7 @@
                 "style":"romantic",
                 "occasion":"formal",
                 "season":"spring",
-                "budget":"250-700",
+                "budget":"350-700",
                 "skin_tone":"light_medium",
                 "items":[
                   {"type":"dress","color":"blush_pink","style":"floral chiffon high_low midi ruffle"},
@@ -1422,7 +1422,7 @@
                 "style":"romantic",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"150-450",
+                "budget":"350-700",
                 "skin_tone":"light",
                 "items":[
                   {"type":"top","color":"pastel_yellow","style":"sleeveless knit"},
@@ -1439,7 +1439,7 @@
                 "style":"classic",
                 "occasion":"work",
                 "season":"fall",
-                "budget":"250-700",
+                "budget":"350-700",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"jacket","color":"caramel","style":"cropped leather moto"},
@@ -1455,7 +1455,7 @@
                 "style":"minimalist",
                 "occasion":"evening",
                 "season":"fall",
-                "budget":"300-800",
+                "budget":"350-700",
                 "skin_tone":"deep",
                 "items":[
                   {"type":"sweater","color":"chocolate_brown","style":"oversized ribbed balloon_sleeve"},
@@ -1471,7 +1471,7 @@
                 "style":"casual",
                 "occasion":"everyday",
                 "season":"spring",
-                "budget":"100-300",
+                "budget":"150-350",
                 "skin_tone":"olive",
                 "items":[
                   {"type":"tshirt","color":"chocolate_brown","style":"cropped fitted"},
@@ -1488,7 +1488,7 @@
                 "style":"smart_casual",
                 "occasion":"everyday",
                 "season":"spring",
-                "budget":"120-350",
+                "budget":"150-350",
                 "skin_tone":"medium_tan",
                 "items":[
                   {"type":"blazer","color":"camel","style":"oversized"},
@@ -1504,7 +1504,7 @@
                 "style":"casual",
                 "occasion":"everyday",
                 "season":"fall",
-                "budget":"80-250",
+                "budget":"150-350",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"sweater","color":"cream","style":"oversized striped knit"},
@@ -1521,7 +1521,7 @@
                 "style":"romantic",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"180-600",
+                "budget":"350-700",
                 "skin_tone":"olive",
                 "items":[
                   {"type":"dress","color":"lilac_pink","style":"floral wrap maxi ruffle flutter_sleeve"},
@@ -1536,7 +1536,7 @@
                 "style":"resort",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"150-500",
+                "budget":"350-700",
                 "skin_tone":"warm_tan",
                 "items":[
                   {"type":"crop_top","color":"aqua_blue","style":"linen asymmetrical button_front"},
@@ -1552,7 +1552,7 @@
                 "style":"vacation_glam",
                 "occasion":"dinner",
                 "season":"summer",
-                "budget":"80-220",
+                "budget":"150-350",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"dress","color":"blue_white","style":"tropical_leaf cutout maxi halter"},
@@ -1567,7 +1567,7 @@
                 "style":"playful",
                 "occasion":"everyday",
                 "season":"summer",
-                "budget":"50-180",
+                "budget":"150-350",
                 "skin_tone":"light",
                 "items":[
                   {"type":"tank_top","color":"white","style":"ribbed fitted"},
@@ -1584,7 +1584,7 @@
                 "style":"quiet_luxury",
                 "occasion":"everyday",
                 "season":"fall",
-                "budget":"120-350",
+                "budget":"150-350",
                 "skin_tone":"deep_tan",
                 "items":[
                   {"type":"sweater","color":"beige","style":"oversized knit"},
@@ -1600,7 +1600,7 @@
                 "style":"streetwear",
                 "occasion":"casual",
                 "season":"spring",
-                "budget":"80-250",
+                "budget":"150-350",
                 "skin_tone":"olive",
                 "items":[
                   {"type":"jacket","color":"olive","style":"oversized cropped utility"},
@@ -1618,7 +1618,7 @@
                 "style":"playful",
                 "occasion":"casual",
                 "season":"summer",
-                "budget":"40-150",
+                "budget":"150-350",
                 "skin_tone":"dark",
                 "items":[
                   {"type":"crop_top","color":"orange","style":"smocked strapless ruffle"},
@@ -1634,7 +1634,7 @@
                 "style":"romantic_casual",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"90-260",
+                "budget":"150-350",
                 "skin_tone":"warm_olive",
                 "items":[
                   {"type":"tank_top","color":"coral","style":"ribbed fitted"},
@@ -1649,7 +1649,7 @@
                 "style":"romantic",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"180-650",
+                "budget":"350-700",
                 "skin_tone":"light_medium",
                 "items":[
                   {"type":"dress","color":"lilac","style":"floral ruffle maxi asymmetrical flutter_sleeve"},
@@ -1664,7 +1664,7 @@
                 "style":"coastal_casual",
                 "occasion":"weekend",
                 "season":"summer",
-                "budget":"120-320",
+                "budget":"150-350",
                 "skin_tone":"fair",
                 "items":[
                   {"type":"jumpsuit","color":"navy","style":"linen sleeveless tie_waist"},
@@ -1678,7 +1678,7 @@
                 "style":"minimal_feminine",
                 "occasion":"brunch",
                 "season":"summer",
-                "budget":"90-280",
+                "budget":"150-350",
                 "skin_tone":"deep_brown",
                 "items":[
                   {"type":"dress","color":"dusty_rose","style":"midi sleeveless a_line"},
@@ -1693,7 +1693,7 @@
                 "style":"european_chic",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"140-450",
+                "budget":"150-450",
                 "skin_tone":"medium_tan",
                 "items":[
                   {"type":"shirt","color":"white","style":"oversized button_up"},
@@ -1709,7 +1709,7 @@
                 "style":"resort_casual",
                 "occasion":"weekend",
                 "season":"summer",
-                "budget":"60-220",
+                "budget":"150-350",
                 "skin_tone":"deep_brown",
                 "items":[
                   {"type":"shirt","color":"blush_pink","style":"oversized lightweight"},
@@ -1725,7 +1725,7 @@
                 "style":"alternative_grunge",
                 "occasion":"festival",
                 "season":"summer",
-                "budget":"70-240",
+                "budget":"150-350",
                 "skin_tone":"light_olive",
                 "items":[
                   {"type":"shirt","color":"multicolor","style":"retro geometric short_sleeve oversized"},
@@ -1741,7 +1741,7 @@
                 "style":"romantic_streetwear",
                 "occasion":"casual",
                 "season":"spring",
-                "budget":"80-260",
+                "budget":"150-350",
                 "skin_tone":"warm_beige",
                 "items":[
                   {"type":"tshirt","color":"black","style":"graphic band"},
@@ -1757,7 +1757,7 @@
                 "style":"romantic_casual",
                 "occasion":"vacation",
                 "season":"summer",
-                "budget":"90-240",
+                "budget":"150-350",
                 "skin_tone":"medium_tan",
                 "items":[
                   {"type":"tank_top","color":"coral","style":"ribbed fitted"},
@@ -1772,7 +1772,7 @@
                 "style":"sporty_chic",
                 "occasion":"casual",
                 "season":"spring",
-                "budget":"100-320",
+                "budget":"150-350",
                 "skin_tone":"caramel",
                 "items":[
                   {"type":"dress","color":"light_blue","style":"denim midi sleeveless button_front"},
@@ -1787,7 +1787,7 @@
                 "style":"dark_romantic",
                 "occasion":"streetwear",
                 "season":"fall",
-                "budget":"110-340",
+                "budget":"150-350",
                 "skin_tone":"pale",
                 "items":[
                   {"type":"sweatshirt","color":"black","style":"oversized"},
@@ -1803,7 +1803,7 @@
                 "style":"playful_streetwear",
                 "occasion":"casual_weekend",
                 "season":"summer",
-                "budget":"70-230",
+                "budget":"150-350",
                 "skin_tone":"light_olive",
                 "items":[
                   {"type":"overalls","color":"leopard","style":"denim print"},

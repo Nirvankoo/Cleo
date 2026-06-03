@@ -63,7 +63,10 @@ struct SavedOutfitDetailView: View {
                 // MARK: - Item Cards
 
                 VStack(spacing: 10) {
-
+                    let primaryStore = engine.getPrimaryStore(
+                        for: outfit,
+                        userBudget: userBudget
+                    )
                     ForEach(outfit.items, id: \.type) { item in
 
                         HStack(spacing: 16) {
@@ -108,7 +111,8 @@ struct SavedOutfitDetailView: View {
                             if let store = engine.getStoreForItem(
                                 item,
                                 style: outfit.style,
-                                userBudget: userBudget
+                                userBudget: userBudget,
+                                primaryStore: primaryStore
                             ) {
 
                                 Button {
@@ -204,7 +208,7 @@ extension SavedOutfitDetailView {
                 searchStyle = "fitted"
 
             case "oversized":
-                searchStyle = "relaxed"
+                searchStyle = "oversized"
 
             case "wide_leg":
                 searchStyle = "wide leg"

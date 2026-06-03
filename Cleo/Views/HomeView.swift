@@ -70,12 +70,12 @@ struct HomeView: View {
                             Text("$\(Int(budget))")
                         }
                         
-                        Slider(value: $budget, in: 100...1000,step: 50)
+                        Slider(value: $budget, in: 150...1500,step: 50)
                         
                         HStack {
-                            Text("$100")
+                            Text("$150")
                             Spacer()
-                            Text("$1000")
+                            Text("$1500")
                         }
                     }
                     .padding(16)

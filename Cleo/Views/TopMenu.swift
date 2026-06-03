@@ -4,50 +4,43 @@ struct TopMenu: View {
 
     @EnvironmentObject var authManager: AuthManager
 
-    @State private var showMenu = false
+    @State private var showProfile = false
     @State private var showSavedOutfits = false
 
     var body: some View {
 
-        HStack {
-
-            Button {
-                print("MENU TAPPED")
-                showMenu = true
-
-            } label: {
-
-                Image(systemName: "line.3.horizontal")
-                    .font(.system(size: 20, weight: .medium))
-                    .foregroundColor(Color("TextPrimary"))
-            }
-
-            Spacer()
+        ZStack {
 
             Text("CLEO")
                 .font(.custom("Manrope-SemiBold", size: 14))
                 .tracking(4)
-                .foregroundColor(Color("TextPrimary"))
 
-            Spacer()
+            HStack {
 
-            Circle()
-                .fill(Color("SurfaceLow"))
-                .frame(width: 32, height: 32)
+                Spacer()
+
+                Button {
+                    showProfile = true
+                } label: {
+                    Image(systemName: "person.circle.fill")
+                        .font(.system(size: 28))
+                        .foregroundColor(Color("TextPrimary"))
+                }
+            }
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 10)
 
-        .sheet(isPresented: $showMenu) {
+        .sheet(isPresented: $showProfile) {
 
             VStack(spacing: 20) {
 
-                Text("Menu")
+                Text("Profile")
                     .font(.title)
 
                 Button {
 
-                    showMenu = false
+                    showProfile = false
 
                     DispatchQueue.main.asyncAfter(
                         deadline: .now() + 0.25
@@ -69,7 +62,6 @@ struct TopMenu: View {
                 Button {
 
                     authManager.signOut()
-                    showMenu = false
 
                 } label: {
 

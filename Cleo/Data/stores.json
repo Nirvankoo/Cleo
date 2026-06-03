@@ -1,8 +1,49 @@
 [
     {
+      "name":"Sport Chek",
+      "price_level":2,
+      "budget_range":"350-500",
+      "style_tags":[
+        "sport",
+        "casual",
+        "travel"
+      ],
+      "season_strength":[
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "color_fit":[
+        "fair",
+        "medium",
+        "tan",
+        "deep"
+      ],
+      "product_categories":[
+        "clothing",
+        "shoes",
+        "accessories"
+      ],
+      "item_types":[
+        "hoodie",
+        "sweater",
+        "leggings",
+        "joggers",
+        "sneakers",
+        "jacket",
+        "coat",
+        "tank_top",
+        "tshirt",
+        "sports_bra",
+        "backpack"
+      ],
+      "search_template":"https://www.sportchek.ca/en/search-results.html?q={query}"
+    },
+    {
         "name":"Uniqlo",
         "price_level":2,
-        "budget_range":"50-150",
+        "budget_range":"350-700",
 
         "style_tags":[
             "casual",
@@ -45,7 +86,7 @@
   {
     "name":"ZARA",
     "price_level":3,
-    "budget_range":"300-600",
+    "budget_range":"300-1500",
     "style_tags":["chic","streetwear"],
     "season_strength":["spring","summer","fall","winter"],
     "color_fit":["fair","medium","tan","deep"],
@@ -67,7 +108,12 @@
             "tote_bag",
             "shoulder_bag",
             "clutch_bag",
-            "handbag"
+            "handbag",
+            "jacket",
+            "crop_top",
+            "skirt",
+            "sunglasses",
+            "earrings"
     ],
     "search_template":"https://www.zara.com/ca/en/search?searchTerm={query}"
   },
@@ -75,7 +121,7 @@
   {
     "name":"Aritzia",
     "price_level":3,
-    "budget_range":"300-600",
+    "budget_range":"800-1500",
     "style_tags":["chic"],
     "season_strength":["spring","fall","winter"],
     "color_fit":["fair","medium","tan"],
@@ -98,7 +144,7 @@
   {
     "name":"COS",
     "price_level":3,
-    "budget_range":"300-600",
+    "budget_range":"800-1500",
     "style_tags":["chic"],
     "season_strength":["spring","fall","winter"],
     "color_fit":["fair","medium","tan"],
@@ -115,7 +161,7 @@
   {
     "name":"Banana Republic",
     "price_level":3,
-    "budget_range":"300-600",
+    "budget_range":"800-1500",
     "style_tags":["chic"],
     "season_strength":["spring","fall","winter"],
     "color_fit":["fair","medium","tan"],
@@ -132,7 +178,7 @@
   {
     "name":"ASOS",
     "price_level":2,
-    "budget_range":"100-300",
+    "budget_range":"350-700",
     "style_tags":["streetwear","casual","chic"],
     "season_strength":["spring","summer","fall"],
     "color_fit":["fair","medium","tan","deep"],
@@ -155,7 +201,7 @@
   {
     "name":"Nike",
     "price_level":2,
-    "budget_range":"100-300",
+    "budget_range":"350-700",
     "style_tags":["sport","streetwear","casual"],
     "season_strength":["spring","summer","fall","winter"],
     "color_fit":["fair","medium","tan","deep"],
@@ -177,7 +223,7 @@
   {
     "name":"Adidas",
     "price_level":2,
-    "budget_range":"100-300",
+    "budget_range":"350-700",
     "style_tags":["sport","streetwear"],
     "season_strength":["spring","summer","fall","winter"],
     "color_fit":["fair","medium","tan","deep"],
@@ -194,7 +240,7 @@
   {
     "name":"Lululemon",
     "price_level":3,
-    "budget_range":"300-600",
+    "budget_range":"700-1000",
     "style_tags":["sport","casual"],
     "season_strength":["spring","summer","fall","winter"],
     "color_fit":["fair","medium","tan","deep"],
@@ -213,7 +259,7 @@
   {
       "name":"Mango",
       "price_level":2,
-      "budget_range":"100-300",
+      "budget_range":"500-1000",
       "style_tags":["chic","casual"],
       "season_strength":["spring","summer","fall","winter"],
       "color_fit":["fair","medium","tan","deep"],
@@ -231,7 +277,7 @@
     {
       "name":"Massimo Dutti",
       "price_level":3,
-      "budget_range":"300-600",
+      "budget_range":"1000-1500",
       "style_tags":["chic","work"],
       "season_strength":["spring","summer","fall","winter"],
       "color_fit":["fair","medium","tan","deep"],
@@ -249,7 +295,7 @@
     {
       "name":"Reformation",
       "price_level":3,
-      "budget_range":"300-600",
+      "budget_range":"1000-1500",
       "style_tags":["chic","date","party"],
       "season_strength":["spring","summer","fall"],
       "color_fit":["fair","medium","tan","deep"],
@@ -266,7 +312,7 @@
     {
       "name":"Urban Outfitters",
       "price_level":2,
-      "budget_range":"100-300",
+      "budget_range":"350-700",
       "style_tags":["streetwear","casual"],
       "season_strength":["spring","summer","fall","winter"],
       "color_fit":["fair","medium","tan","deep"],
@@ -284,7 +330,7 @@
     {
       "name":"Alo Yoga",
       "price_level":3,
-      "budget_range":"100-300",
+      "budget_range":"700-1000",
       "style_tags":["sport","athleisure"],
       "season_strength":["spring","summer","fall","winter"],
       "color_fit":["fair","medium","tan","deep"],
@@ -301,7 +347,7 @@
     {
       "name":"Sézane",
       "price_level":3,
-      "budget_range":"300-600",
+      "budget_range":"800-1500",
       "style_tags":["chic","casual"],
       "season_strength":["spring","summer","fall"],
       "color_fit":["fair","medium","tan","deep"],
@@ -318,7 +364,7 @@
     {
         "name":"Amazon Fashion",
         "price_level":1,
-        "budget_range":"100-150",
+        "budget_range":"150-350",
         "style_tags":["casual","streetwear","sport","chic"],
         "season_strength":["spring","summer","fall","winter"],
         "color_fit":["fair","medium","tan","deep"],
@@ -348,7 +394,7 @@
       {
         "name":"SHEIN",
         "price_level":1,
-        "budget_range":"100-150",
+        "budget_range":"150-350",
         "style_tags":["streetwear","casual","chic","party"],
         "season_strength":["spring","summer","fall","winter"],
         "color_fit":["fair","medium","tan","deep"],
@@ -368,13 +414,13 @@
             "earrings",
             "necklace"
         ],
-        "search_template":"https://ca.shein.com/search?keyword={query}"
+        "search_template":"https://ca.shein.com/pdsearch/{query}"
       },
 
       {
         "name":"Old Navy",
         "price_level":1,
-        "budget_range":"100-150",
+        "budget_range":"150-350",
         "style_tags":["casual","everyday"],
         "season_strength":["spring","summer","fall","winter"],
         "color_fit":["fair","medium","tan","deep"],
@@ -392,7 +438,7 @@
       {
         "name":"Forever 21",
         "price_level":1,
-        "budget_range":"100-150",
+        "budget_range":"150-350",
         "style_tags":["streetwear","party","casual"],
         "season_strength":["spring","summer","fall","winter"],
         "color_fit":["fair","medium","tan","deep"],
@@ -409,7 +455,7 @@
       {
         "name":"Abercrombie",
         "price_level":2,
-        "budget_range":"100-300",
+        "budget_range":"700-1000",
         "style_tags":[
           "casual",
           "chic",
@@ -440,7 +486,7 @@
       {
           "name":"GAP",
           "price_level":1,
-          "budget_range":"100-150",
+          "budget_range":"350-700",
           "style_tags":["casual","everyday","minimalist"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -455,7 +501,7 @@
       {
           "name":"Coach",
           "price_level":3,
-          "budget_range":"150-600",
+          "budget_range":"500-1500",
           "style_tags":["chic","classic","quiet_luxury"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -470,7 +516,7 @@
       {
           "name":"Michael Kors",
           "price_level":3,
-          "budget_range":"150-600",
+          "budget_range":"800-1500",
           "style_tags":["chic","classic","luxury"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -487,7 +533,7 @@
       {
           "name":"Saks Fifth Avenue",
           "price_level":4,
-          "budget_range":"600-1000",
+          "budget_range":"1000-1500",
           "style_tags":["designer","luxury","chic"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -502,7 +548,7 @@
       {
           "name":"Kate Spade",
           "price_level":3,
-          "budget_range":"150-500",
+          "budget_range":"800-1500",
           "style_tags":["romantic","playful","chic"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -517,7 +563,7 @@
       {
           "name":"Ralph Lauren",
           "price_level":3,
-          "budget_range":"150-500",
+          "budget_range":"800-1500",
           "style_tags":["classic","preppy","chic"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -532,7 +578,7 @@
       {
           "name":"Calvin Klein",
           "price_level":2,
-          "budget_range":"100-300",
+          "budget_range":"700-1000",
           "style_tags":["minimalist","casual","chic"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -547,7 +593,7 @@
       {
           "name":"Steve Madden",
           "price_level":2,
-          "budget_range":"100-300",
+          "budget_range":"350-700",
           "style_tags":["party","streetwear","trendy"],
           "season_strength":["spring","summer","fall","winter"],
           "color_fit":["fair","medium","tan","deep"],
@@ -557,41 +603,6 @@
               "sandals","sneakers"
           ],
           "search_template":"https://www.stevemadden.ca/search?q={query}"
-      },
-      {
-          "name":"Sunglass Hut",
-          "price_level":2,
-          "budget_range":"80-500",
-
-          "style_tags":[
-              "casual",
-              "chic",
-              "streetwear",
-              "luxury"
-          ],
-
-          "season_strength":[
-              "spring",
-              "summer",
-              "fall",
-              "winter"
-          ],
-
-          "color_fit":[
-              "fair",
-              "medium",
-              "tan",
-              "deep"
-          ],
-
-          "product_categories":[
-              "accessories"
-          ],
-
-          "item_types":[
-              "sunglasses"
-          ],
-
-          "search_template":"https://www.sunglasshut.com/ca/search?q={query}"
       }
+    
 ]
